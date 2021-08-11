@@ -1,0 +1,1028 @@
+@media (max-width:1200px){
+/*----Login Page-----*/
+.formtxt-wrapper {
+    max-width:70%;
+    margin: 0 auto;
+}
+.login-form {
+    padding: 0;
+	padding-bottom: 15px;
+}
+.formtxt-wrapper label.toggler {
+    font-size: 11px;
+	    padding-top: 0;
+	
+}
+
+
+.formtxt-wrapper .forget-pass{
+ font-size:11px;	
+}
+.login-form label.toggler::before {
+    width: 15px;
+    height: 15px;
+    top: -1px;
+    left: 21px;
+}
+label.toggler::after {
+    left:16px;
+    top: 1px;
+}
+.login-txt {
+    margin-top: 97px;
+}
+#birthday-Modal .modal-dialog {
+margin-left:auto;
+margin-right:auto;
+}
+
+}
+
+
+@media (max-width:1199px){
+/*----header section-----*/	
+ .navbar-header {
+    width:32%;
+}
+.top-bar .cs-user ul li ul.hover-menu{
+right:-20px;
+width:175px;	
+}
+/*----Report Card-----*/	
+.rc-info li:nth-child(2n) {
+    padding-left: 235px;
+}
+.student-info, .receipt-info {
+    width: 48.9%; 
+}
+.invoice-info {
+    width: 23%;
+}
+.school-name {
+    width: 57%;
+}
+#style_switcher {
+    width: 300px;
+}
+#style_switcher_toggle {
+    left: -82px;
+    width: 43%;
+
+}
+#style_switcher.switcher_active {
+    margin-right: -300px;
+}
+.guidelines-content {
+    height: 415px;
+}
+#style_switcher2 {
+    width: 320px;
+}
+#style_switcher2.switcher_active2 {
+    margin-bottom: -371px;
+}
+.guidelines-content {
+    height: 370px;
+}
+.happening-content.pull-left {
+    width: 75%;
+}
+.inner-txt {
+    width: 86%;
+}
+.marks-info .dropdown-group .form-control {
+    width: 66%;
+}
+}
+
+@media (max-width:991px){
+	.btn{
+	 font-size:12px;
+	 padding: 3px 7px;	
+	}
+	.main-box-header .filter-block {
+    margin-top: 15px;
+}
+.right-image{
+    display:none;
+    }
+
+/*----header section-----*/	
+ .navbar-header {
+    width:28%;
+}	
+.navbar-brand {
+   padding:27px 0 27px 15px;
+}	
+.navbar-nav > li > a {
+    padding: 5px 10px;
+    font-size: 13px;
+}	
+.inner-txt ul{
+padding-left:15px;	
+}
+ul.holiday li,.inner-date ul li,.inner-txt ul li{
+ font-size:13px;	
+}
+ul.holiday {
+    padding-left: 20px;
+}
+ul.holiday li:before {
+    left: -14px;
+    top: 6px;
+
+}
+.holiday-title{
+ font-size:12px;	
+}
+.contact.pull-left {
+    width: 74%;
+}
+/*===fee info=====*/
+.fee-info ul li{
+font-size:12px;
+ margin-bottom: 10px;	
+}
+.fee-info ul li a i {
+    margin: 0 3px;
+    font-size: 15px;
+}
+.fee-info .l-arrow li:before {
+    top: 1px;
+}
+/*===Assignments=====*/
+.panel-assignment .todo-list li{
+ font-size:12px;	
+}
+/*===Marks-Info=====*/
+.marks-content h3 {
+    font-size: 18px;
+}
+.marks-content.pull-left {
+    width: 70%;
+}
+.marks-content ul li {
+    font-size: 13px;
+}
+.marks-content ul{
+padding-left:10px;	
+}
+/*----user profile section-----*/
+.top-section .pull-left{
+ float:none !important;	
+}
+.top-section .img-sec{
+	text-align:center;
+	margin-bottom:15px;
+}
+.user-profile .profile-list {
+    padding-left: 0;
+	padding-top:15px;
+	text-align:center;
+}
+.user-profile .profile-list li {
+    margin-right:7px;
+}
+.user-profile .profile-btm {
+    text-align: left;
+}
+/*----achievements section-----*/
+.achievement-page .image-sec {
+   width: 130px;
+}
+.achievement-page .content-sec {
+    width: 76%;
+}
+.achievement-page .content-sec h3{
+ font-size:13px;	
+}
+.achievement-page .content-sec strong,.achievement-page .content-sec p{
+font-size:12px;	
+}
+.achievement-page .content-sec p{
+ margin-bottom:3px;	
+}
+/*----Read-more section-----*/
+.read-more h3{
+ font-size:16px;	
+}
+.read-more .content-sec p{
+    line-height: 17px;	
+}
+.read-more strong {
+    margin: 5px 0 10px;
+    font-size: 12px;
+}
+/*----Home Work section-----*/
+.hw-info .btm-inner-content .right-content{
+    width: 59%;	
+}
+.hw-info .btm-inner-content .right-content ul {
+    width: 80%;
+}
+/*----Report Card-----*/	
+.rc-info li:nth-child(2n) {
+    padding-left:130px;
+}
+.ms-main .main-title h2{
+ font-size:16px;	
+}
+.ms-inner .img-sec {
+    width: 35%;
+}
+.ms-txt {
+    width: 60%;
+}
+.ms-txt a {
+    margin-bottom: 5px;
+}
+/*----Login Page-----*/
+.login-form {
+    padding: 35px 0;
+	margin-bottom: 100px;
+}
+/*.col-sm-12.pull-right{
+ text-align:center;	
+}*/
+.login-txt {
+    background:#fff;
+    padding: 18px 0;
+    max-width: 413px;
+    margin: 34px auto 0;
+}
+.login-txt ul {
+    padding-left: 15px;
+}
+/*----fee receipt----*/
+.student-info, .receipt-info {
+    width:48%;
+}
+/*----birthday popup----*/
+#birthday-Modal .modal-dialog {
+    width: 700px;
+}
+ul.fader {
+    height: 320px;
+}
+.todo-list .uk-text-bold {
+    font-weight: 700;
+    font-size: 12px;
+}
+.todo-list .inner-txt {
+    width: 50%;
+    font-size: 13px;
+}
+.mt-sm-15 {
+    margin-top: 20px;
+}
+.panel-holiday .main-title {
+    padding: 0 10px 12px;
+}
+.academic-inner {
+    width: 35%;
+}
+    .academic-btn {
+        margin-top: 60px;
+        width: 62%;
+    }
+	.login-form label.toggler::before {
+    left:40px;
+}
+label.toggler::after {
+    left:35px;
+    top: 1px;
+}
+#style_switcher {
+    width: 230px;
+	    margin-right: -230px;
+}
+#style_switcher_toggle {
+        left: -78px;
+    width: 56%;
+    height: 11%;
+
+}
+#style_switcher.switcher_active {
+    margin-right: 0px;
+}
+#style_switcher2 {
+   margin-bottom:-370px;
+}
+#style_switcher2.switcher_active2 {
+     margin-bottom:2px;
+}
+.guidelines-content {
+    height:370px;
+}
+#style_switcher2 {
+    width: 375px;
+}
+.happening-content.pull-left {
+    width: 68%;
+}
+.subject-right {
+    width: 85%;
+}
+.marks-info .dropdown-group .form-control {
+    width: 56%;
+}
+.form-forgot.login-form {
+    margin-bottom: 0;
+}
+.img-right {
+    margin-bottom: 20%;
+}
+body.login {
+    background-size: contain!important;
+}
+}
+@media (max-width:767px){
+/*----header section-----*/	
+.navbar-header{
+width:auto;	
+}
+.navbar-brand {
+    padding: 10px 0 10px 10px;
+}
+.navbar-toggle{
+    margin-top: 43px;	
+}
+.top-bar .cs-user{
+margin-left:0;	
+}
+.top-bar .cs-user ul li{
+padding:0 10px;	
+}
+.top-bar .cs-user ul li ul.hover-menu{
+    right: -12px;	
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1976D2;
+}
+.navbar-default .navbar-toggle {
+    border-color:#FD614A;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+.navbar-nav {
+    float:none;
+    padding: 10px 0;
+}
+.nav > li {
+    margin-bottom: 5px;
+}
+.contact ul {
+  padding: 9px 0 6px;
+}
+.contact.pull-left {
+    width:65%;
+    font-size:13px;
+    margin-top:5px;
+}
+.logo-txt {
+    width: 54%;
+}
+/*----user profile section-----*/
+.profile-inner{
+text-align:center;	
+}
+.profile-inner img{
+margin-top:20px;
+border-radius:50%;
+width:250px;
+height:250px;	
+}
+.profile-txt .form-group{
+text-align:left;
+max-width:271px;
+margin:0 auto;	
+}
+.more-info{
+text-align:left;
+box-shadow:none;
+max-width:300px;
+margin-left:auto;	
+margin-right:auto;
+}
+.more-info ul{
+padding:0;	
+}
+.user-profile .profile-list li {
+    margin-right: 15px;
+    font-size: 13px;
+}
+.user-profile .profile-btm {
+    margin-bottom: 25px;
+}
+/*----achievements section-----*/
+.achievement-page .content-sec {
+    width: 62%;
+}
+.achievement-page .content-sec p {
+    line-height: 16px;
+}
+.achievement-page .content-sec strong {
+    margin-top: 10px;
+}
+.achievement-page .content-sec .btn{
+  margin-bottom:10px;	
+}
+/*----read-more section-----*/
+.read-more .image-sec img{
+width:100%;
+height:auto;	
+	
+}
+/*----Home Work section-----*/
+.hw-info .btm-inner-content .right-content {
+    width: 100%;
+}
+.hw-info .btm-inner-content .right-content button{
+    margin: 0 0px 10px 15px;	
+}
+/*----Report Card-----*/	
+.rc-info li:nth-child(2n) {
+   padding-left: 20px;
+}
+.rc-info label {
+    min-width: 117px;
+}
+.rc-info {
+    padding: 10px 10px 0;
+}
+.rc-header p {
+  font-size:13px;
+}
+.rc-btm li label {
+    min-width: 80px;
+}
+.rc-btm li {
+    width: 32.5%;
+}
+.rc-footer .space {
+    width: 87%;
+    padding: 0 15px;
+}
+p.rc-year{
+ font-size:18px;	
+}
+.ms-main .main-title h2 {
+    font-size: 15px;
+}
+.ms-txt {
+    width: 65%;
+}
+.ms-txt {
+    margin-top: 8px;
+}
+/*----fee receipt-----*/
+.print-logo,.school-name,.invoice-info{
+width:100%;
+float:none;
+text-align:center;	
+}
+.school-name h2 {
+    font-size: 19px;
+}
+.student-info, .receipt-info {
+    width: 100%;
+}
+#birthday-Modal .modal-dialog {
+    width: 100%;
+}
+#birthday-Modal .modal-body{
+    background: #999;
+}
+#birthday-Modal .text-sec.text-sec-left,#birthday-Modal .text-sec.text-sec-right{
+left:0;
+right:0;
+width:100%;	
+}
+#desktop-calender{
+display:none;	
+}
+#mini-clndr{
+display:block;	
+}
+
+.academic-inner,.academic-btn {
+    width: 100%;
+}
+    .academic-btn {
+        margin-top: 10px;
+        text-align: center;
+        padding-bottom:20px;
+    }
+    .academic-btn a{
+        margin-bottom:5px;
+    }
+	
+#login-page{
+background:#66ccff;
+}
+#login-page:after{
+display:none;	
+	
+}
+
+#style_switcher {
+    width:230px;
+}
+#style_switcher_toggle {
+        left: -78px;
+    width: 56%;
+    height: 11%;
+
+}
+#style_switcher.switcher_active {
+    margin-right:-230px;
+}
+#style_switcher2 {
+    width:440px;
+}
+.guidelines-content {
+    height: 350px;
+}
+#style_switcher2 {
+    margin-bottom: -352px;
+}
+
+}
+@media (max-width:768px){
+/*----Login Page-----*/
+/*#login-page{
+background:#f7f7f7;	
+}*/
+.login-form {
+    padding: 35px 0;
+    margin: 30px auto 10px;
+    max-width: 350px;
+}
+.main-login .login-img {
+    margin-top: 15px;
+}
+    /* Force table to not be like tables anymore */
+	#mob-table table, 
+	#mob-table thead, 
+	#mob-table tbody, 
+	#mob-table th, 
+	#mob-table td, 
+	#mob-table tr { 
+		display: block !important; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#mob-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#mob-table tr { border: 1px solid #ccc; }
+ 
+	#mob-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#mob-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#mob-table  td:before { content: attr(data-title); }
+	.fee-page .table thead{
+	margin-bottom:0;	
+	}
+    .notices-page{
+    overflow:hidden;
+}
+.invoice-inner #mob-table th.hide-sm{
+display:none !important;	
+}
+   body.login .box-forgot{
+        top: 50px !important;
+    }
+       .form-forgot.login-form {
+   margin:20px auto;
+}
+       .panel-body.event-sec{
+           margin-bottom:16px;
+
+       }
+    .setting-form label {
+        width: 100%;
+    }
+    .important-notes {
+       margin:0 auto;
+       margin-right:0 !important;
+    }
+	body.login .box-login, body.login .box-forgot{
+      margin:0!important;
+	}
+	.img-right{
+	margin-top:0;
+	margin-bottom: 70px;	
+	}
+}
+@media (max-width:479px){
+	.main-box-header h2,.toppers h2,.main-title h2{
+	font-size:16px;	
+	}
+.hide-xs{
+    display: none !important;	
+}
+.top-bar .cs-user ul li {
+    padding: 0px 8px;
+}
+.cs-user-login .cs-media{
+  margin-left:0;	
+}
+.top-bar ul.top-nav li{
+margin:0;	
+}
+.top-bar .col-xs-4{
+    width: 39.333333%;	
+}
+.navbar-default .navbar-brand {
+    width: 215px;
+}
+.navbar-toggle {
+    margin-top: 22px;
+}
+.e-contact{
+ display:none;	
+}
+.contact.pull-left {
+    width: 40%;
+}
+.contact.pull-left{
+display:none;	
+}
+/*===Event-info=====*/
+.timeline-desk{
+display:block;
+width:100%;		
+}
+.timeline .timeline-date {
+    left: 50px;
+    top: 11px;
+}
+.timeline-desk .panel {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.timeline-item.alt .timeline-date {
+    right: -80px;
+}
+.event-sec {
+    margin-bottom: 20px;
+}
+.event-sec .main-title{
+padding:0;	
+}
+/*----user profile section-----*/
+.user-profile .profile-list li{
+ display:block;
+ text-align:left;
+ margin-bottom:5px;		
+}
+.user-profile .profile-list li strong{
+min-width:130px;
+display:inline-block;	
+}
+.parent-btm ul{
+ padding-left:0px;	
+}
+.parent-btm i {
+    margin-right: 8px;
+}
+/*----Academics section-----*/
+.main-box .main-box-body {
+    padding:0 0 10px;
+}
+.main-box-header{
+margin-bottom:0;	
+}
+.main-box-header h2{
+ margin-top: 10px;
+ line-height: 22px;
+ margin-bottom: 10px;		
+}
+.academics-info .main-box-header h2,.academics-info .main-box-header .filter-block{
+ float:none !important;
+ text-align:center;
+}
+.main-box-header .filter-block{
+margin-bottom:5px;	
+}
+.academics-info .main-title{
+text-align:center;
+    padding: 0 0 12px;	
+}
+.academics-info .main-title h2,.academics-info .main-title a{
+ float:none !important;	
+}
+.academics-info .button-group{
+text-align:center;	
+}
+.academics-info .button-group a{
+ margin-bottom:5px;	
+}
+/*----achievements section-----*/
+.achievement-page .content-sec {
+    width: 100%;
+	padding:10px;
+	margin-left:0;
+}
+.achievement-page .image-sec{
+ float:none !important;
+ margin:10px auto 0; 
+ text-align:center;	
+}
+.achievement-page .content-sec h3{
+ margin-top:0;	
+}
+
+/*----Home Work section-----*/
+.select-wrapper {
+    padding: 15px 0 10px;
+    max-width: 260px;
+    margin: 0 auto;
+}
+.select-wrapper select {
+    width: 148px;
+}
+/*----Report Card-----*/
+.rc-title {
+    font-size: 17px;
+}
+.rc-term{
+ font-size:16px;	
+}
+.rc-info li{
+ width:100%;	
+}
+.rc-info li:nth-child(2n) {
+    padding-left:0;
+}
+.rc-btm li {
+    width: 100%;
+}
+.rc-btm li label {
+    min-width: 125px;
+}
+.rc-footer .space {
+    width: 80%;
+	
+}
+.rc-footer .rc-sign li {
+    width: 100%;
+    margin-bottom: 12px;
+    padding-left: 15px;
+	text-align:left;
+}
+.rc-sign li:after{
+    content: "";
+    width: 75px;
+    height: 2px;
+    border-bottom: 1px dashed #000;
+    display: inline-block;
+    margin-left: 10px;
+}
+.col-sm-4.col-xs-6{
+width:100%;	
+}
+.ms-txt a {
+    margin-bottom: 12px;
+}
+.ms-txt {
+    margin-top: 15px;
+}
+.select-wrapper input {
+    width: 150px;
+}
+/*----Login Page-----*/
+.login-form {
+    padding: 0px 0 20px 0;
+
+}
+.login-txt{
+ padding-right:5px;	
+}
+
+    .notices-page .main-box-header {
+   text-align:center;
+    }
+	.notices-page .bg-btn {
+    float: none !important;
+}
+     .notices-page .main-box-header h2 a{
+          margin-top: 5px;
+         display:block;
+     }
+     .download-btn.ng-scope {
+    margin-top:5px;
+}
+.main-box-body.notice-dec {
+    padding: 10px !important;
+        word-break: break-all;
+}
+.contact li {
+    font-size: 12px;
+}
+.contact .adm-no{
+    display:block;
+}
+.contact.pull-left{
+
+    display:block;
+    width:55%;
+    margin-top: 0;
+}
+#header_main{
+        padding: 0 10px;
+}
+#header_main .sSwitch.sSwitch_left {
+    margin-right:0px;
+}
+.footer p b{
+    display:block;
+}
+.inner-txt {
+    width: 56%;
+    display: inline-block;
+}
+.container-fluid.mob-container{
+ padding:0 8px;	
+}
+span.wrapper2 {
+    display: block;
+}
+strong.student-name {
+    border-right: none;
+}
+.contact ul {
+    padding: 5px 0 6px;
+}
+span.registration-no {
+    border-right: 1px solid #fff;
+    line-height: 14px;
+    padding-right:5px;
+}
+strong.section {
+    padding-left: 5px;
+}
+.instructions .modal-body {
+   height:250px;
+}
+.notices-page h2 {
+    display:block;
+     margin-right:0px; 
+}
+.login-text ul li {
+    font-size: 12px;
+}
+.login-form label.toggler::before {
+    left: 28px;
+}
+label.toggler::after {
+    left: 23px;
+    top: 1px;
+}
+#style_switcher {
+    width: 261px;
+    margin-right: -261px;
+}
+#style_switcher_toggle {
+    left: -86px;
+    width: 56%;
+    height: 15%;
+}
+#style_switcher.switcher_active {
+    margin-right: -15px;
+}
+#style_switcher2 {
+    width: 290px;
+}
+.guidelines-content {
+    height: 350px;
+}
+#style_switcher2 {
+    margin-bottom: -352px;
+}
+.invoice-inner #mob-table td.padd-xs{
+padding-left:155px;	
+}
+.login-form {
+    max-width:350px;
+    margin: 30px 0 20px;
+}
+#style_switcher {
+    z-index:9;
+  
+}
+.uk-navbar-flip {
+    float:none; 
+}
+.happening-content.pull-left {
+    width: 66%;
+}
+    body.login .box-forgot{
+        top: 50px !important;
+    }
+    .form-forgot.login-form {
+   margin:20px 0;
+}
+    .setting-form input[type="text"], .setting-form input[type="password"] {
+    width: 100%;
+}
+   
+ul.fader {
+    height: 240px;
+}
+#birthday-Modal .text-sec {
+    top: 152px;
+}
+#birthday-Modal{
+    padding:0 17px;
+}
+    #style_switcher3 {
+
+        width: 315px;
+    }
+        #style_switcher3 .guidelines {
+            height: 320px;
+        }
+        #style_switcher3.switcher_active3 {
+    margin-bottom: -320px;
+}
+            
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+  label {
+       font-size: 12px;
+    width: 100%;
+	    background: #eee;
+  }
+    body.login .box-login, body.login .box-forgot {
+                position:static !important;
+                padding:0 !important;
+            }
+             .formtxt-wrapper label{
+background:#fff;
+              }
+            
+    .registration-txt {
+        padding: 10px;
+        font-size: 24px;
+    }
+    .acert-notifications {
+    height: 400px!important;
+    width:100%!important;
+}
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+  input:checked + label {
+    background: #fff;
+}
+main {
+    padding: 20px;
+}
+.pl-0{
+ padding-left:15px;	
+}
+.pr-0{
+ padding-right:15px;	
+}
+  
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}

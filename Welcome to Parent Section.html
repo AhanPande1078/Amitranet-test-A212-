@@ -1,0 +1,3143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://aisnnew.amizone.net/HomeTemplate/HomeTemplate -->
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths uk-notouch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Parent Section</title>
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="./Welcome to Parent Section_files/uikit.almost-flat.min.css" media="all">
+    <!-- altair admin -->
+    <link href="./Welcome to Parent Section_files/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/css(1)" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/font-awesome.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/owl.carousel.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/loader.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/global.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./Welcome to Parent Section_files/main.css" media="all">
+    <link href="./Welcome to Parent Section_files/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./Welcome to Parent Section_files/responsive.css" type="text/css" rel="stylesheet" media="all">
+    <script src="./Welcome to Parent Section_files/jquery-3.1.1.js.download"></script>
+    <script src="./Welcome to Parent Section_files/jquery-3.1.1.min.js.download"></script>
+    <script src="./Welcome to Parent Section_files/LayOut.js.download"></script>
+
+
+<style>
+        .uk-dropdown.uk-dropdown-small {
+            width: 373px;
+        }
+
+        .uk-dropdown-small .uk-nav {
+            display: inline-block;
+            float: right;
+            border-left: 2px solid #ddd;
+            padding-left: 10px;
+        }
+
+        .md-user-image.inner {
+            width: 150px;
+            height: 150px;
+    margin-top: 10px;
+        }
+        /*=====Events============*/
+
+
+        .event-section .timeline:before {
+            display: none;
+        }
+
+        .img-hover img:hover {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(1.20);
+            -moz-transform: scale(1.20);
+            -ms-transform: scale(1.20);
+            -o-transform: translatZ(0) scale(1.20);
+            transform: translatZ(0) scale(1.20);
+        }
+
+        .img-hover img {
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+
+        .event-section small {
+            font-weight: bold;
+        }
+
+        .bg-brown {
+            background: #86592d !important;
+        }
+
+        .bg-red {
+            background: #ff3333 !important;
+        }
+
+        .timeline-txt {
+            width: 70%;
+            float: left;
+        }
+
+        .timeline-img {
+            width: 30%;
+            float: left;
+        }
+
+            .timeline-img img {
+                height: 169px;
+            }
+
+        .bg-orange {
+            background: #ffd9b3 !important;
+        }
+
+        .bg-blue {
+            background: #25c6da !important;
+        }
+
+        .timeline-box {
+            overflow: hidden;
+        
+        }
+
+        .timeline-txt {
+            padding: 0 20px;
+            min-height: 169px;
+        }
+
+            .timeline-txt .title {
+                color: #424242;
+                font-weight: bold;
+    display: inline-block;
+    margin: 0;
+font-size:18px;
+            }
+
+        .timeline-box.left .timeline-img {
+        }
+        .event-section .panel-body{
+            padding-bottom:0;
+        }
+        .event-section{
+            padding-bottom:10px;
+        }
+  .event-section .sub-title{
+
+  padding:10px 0;
+}
+  .event-section .sub-title strong{
+color:#f00;
+font-weight:normal;
+}
+    </style>
+
+    <script>
+        function Logout() {
+            Sessiondata1();
+            debugger;
+            $.ajax({
+                type: "POST", 		//GET or POST or PUT or DELETE verb
+                url: '../Login/Logout', 		// Location of the service
+                // content type sent to server
+                dataType: "json", 	//Expected data format from server
+                processdata: true, 	//True or False
+                success: function (d) {//On Successful service call
+                    debugger;
+                    if (d.LoginName == null) {
+                        window.location.href = "/Login/Login";
+                    }
+                },
+                error: function ()
+                { alert(""); }	// When Service call fails
+            });
+        }
+
+        function Sessiondata1() {
+            debugger;
+            $.ajax({
+                type: "POST", 		//GET or POST or PUT or DELETE verb
+                url: '../Login/GetSessionid', 		// Location of the service
+                // content type sent to server
+                dataType: "json", 	//Expected data format from server
+                processdata: true, 	//True or False
+                success: function (d) {//On Successful service call
+                    debugger;
+                    if (d.LoginName == null) {
+                        window.location.href = "../Login/Login";
+                    }
+                },
+                error: function ()
+                { alert(""); }	// When Service call fails
+            });
+        }
+        $(document).ready(function () {
+ 
+            CountAlert();
+            AllAlert();
+           
+
+            $("#Inboxs").click()
+            {
+                var url = window.location.pathname.split("/");
+                var questions = url[1];
+                if (questions == "mailbox" || questions == "ComposeMail" || questions == "SendMsg") {
+                    $('#mailbox').removeClass("submenu_trigger");
+                    $('#messagecolor').css("color", "#000");
+                    $('#messagecolor').css("background", "#ffb136");
+                    $('#messagecolor').css("border-bottom", "1px solid #fff");
+                    $('#mailbox').addClass("submenu_trigger act_section");
+                    $('#mailboxul').css("display", "block");
+                }
+
+
+
+
+                
+            }
+        });
+
+
+        $(document).ready(function () {
+          
+
+            $("#Inboxs1").click()
+            {
+                var url = window.location.pathname.split("/");
+                var questions1 = url[1];
+                if (questions1 == "UserProfile" || questions1 == "healthstatus" || questions1 == "EmergencyContact" || questions1 == "Settings") {
+                    $('#mailbox1').removeClass("submenu_trigger");
+                    $('#messagecolor1').css("color", "#000");
+                    $('#messagecolor1').css("background", "#ffb136");
+                    $('#messagecolor1').css("border-bottom", "1px solid #fff");
+                    $('#mailbox1').addClass("submenu_trigger act_section");
+                    $('#mailboxul1').css("display", "block");
+                }
+            }
+        });
+      
+        function AllAlert() {
+            debugger;
+            $.ajax({
+                type: "POST",
+                url: '../_Layout/AllAlert',
+                // data: '{username: ' + userName + '}',                
+                dataType: "json",
+                async: false,
+                success: function (d) {//On Successful service call
+                    debugger;
+                    var html = "";
+                    for (var j = 0; j < d.length; j++) {
+                        html += '<li><div  class="md-list-content"><span class="md-list-heading"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>' + d[j].Title + '</span> </li>';
+                    }
+
+                    $("#titleid").append(html);
+                },
+                error: function () {
+                    alert("");
+                }	// When Service call fails
+            });
+        }
+
+
+        function CountAlert() {
+            debugger;
+            $.ajax({
+                type: "POST",
+                url: '../_Layout/CountAlert',
+                // data: '{username: ' + userName + '}',
+                contentType: "application/json; charset=UTF-8",
+                   dataType: "json",
+                async: false,
+                success: function (d) {//On Successful service call
+                    debugger;
+ 
+                    $("#Count").append(d);
+                },
+                error: function () {
+                    alert("");
+                }	// When Service call fails
+            });
+        }
+    </script>
+
+    
+
+    <style>
+        .uk-tab > li {
+            float: none;
+        }
+
+        .md-list > li > .md-list-content .md-list-heading {
+            font-size: 14px;
+            line-height: 1;
+        }
+
+            .md-list > li > .md-list-content .md-list-heading i {
+                color: #e74a25;
+            }
+
+            .md-list > li > .md-list-content .md-list-heading a {
+                color: #000;
+            }
+
+        #header_main .uk-navbar .uk-navbar-nav > li .uk-dropdown .md-list li:hover {
+            background-color: #E9E9E9;
+        }
+
+        #header_main .uk-navbar .uk-navbar-nav > li .uk-dropdown .md-list {
+            margin-left: -25px;
+        }
+
+        .md-list > li {
+            min-height: auto;
+            padding: 10px 4px;
+        }
+
+        .uk-dropdown {
+            padding: 0 10px;
+        }
+    </style>
+
+</head>
+
+<body class="sidebar_main_open sidebar_main_swipe loaded" ng-controller="Layout" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    <div id="extwaiokist" style="display:none" v="obocp" q="564bdcae" c="290.5" i="18" u="14.89" s="08052102" d="1" w="false" e="" m="BMe=" vn="3gtr1"><div id="extwaigglbit" style="display:none" v="obocp" q="564bdcae" c="290.5" i="18" u="14.89" s="08052102" d="1" w="false" e="" m="BMe="></div></div></div><!-- loader -->
+    <!-- main header -->
+    <header id="header_main">
+        <div class="header_main_content">
+            <nav class="uk-navbar">
+
+                <!-- main sidebar switch -->
+                <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <div class="contact pull-left">
+                    <ul>
+                        <li>
+
+                                <span class="welcome-txt">Welcome</span> <strong class="student-name"> Ahan</strong>
+                                <span class="wrapper2">
+                                    <span class="registration-no"> 32856</span>
+                                    <strong class="section">
+                                        VII - I
+                                    </strong>
+                                </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav user_actions">
+                        <li data-uk-dropdown="{mode:&#39;click&#39;,pos:&#39;bottom-right&#39;}">
+                            <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="user_action_icon"><i class="fa fa-bell" aria-hidden="true"></i><span class="uk-badge" id="Count">4</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge">
+                                <div class="md-card-content">
+                                    <ul class="uk-tab " data-uk-tab="{connect:&#39;#header_alerts&#39;,animation:&#39;slide-horizontal&#39;}">
+                                        <li class="uk-active" aria-expanded="true"><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="js-uk-prevent uk-text-small">Notification</a></li>
+                                    <li class="uk-tab-responsive uk-active uk-hidden" aria-haspopup="true" aria-expanded="false"><a>Notification</a><div class="uk-dropdown uk-dropdown-small"><ul class="uk-nav uk-nav-dropdown"></ul><div></div></div></li></ul>
+                                    <ul id="header_alerts" class="uk-switcher">
+                                        <li aria-hidden="false" class="uk-active">
+                                            <ul class="md-list md-list-addon" id="titleid"><li><div class="md-list-content"><span class="md-list-heading"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://aisnnew.amizone.net/fee/fee"><font color="#00bbd9">Feebill Date</font></a><br>Amount -19667.00 - Feebill Date: 06 Jul 21</span> </div></li><li><div class="md-list-content"><span class="md-list-heading"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://aisnnew.amizone.net/HomeworkDetails/HomeworkDetails?SNo=157439"> <font color="#00bbd9">HomeWork</font><br><p>
+	REPIRATION IN ORGANISMS</p>
+(Sc-Written Paper) - Submit Date: 09 Aug 21 </a></span> </div></li><li><div class="md-list-content"><span class="md-list-heading"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://aisnnew.amizone.net/HomeworkDetails/HomeworkDetails?SNo=157454"> <font color="#00bbd9">HomeWork</font><br>कारक (Hin-Written Paper) - Submit Date: 09 Aug 21 </a></span> </div></li><li><div class="md-list-content"><span class="md-list-heading"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><a href="https://aisnnew.amizone.net/HomeworkDetails/HomeworkDetails?SNo=157493"> <font color="#00bbd9">HomeWork</font><br><p>
+	OUR CHANGING EARTH</p>
+(SSc-Written Paper) - Submit Date: 09 Aug 21 </a></span> </div></li></ul>
+                                            
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        
+                        <li data-uk-dropdown="{mode:&#39;click&#39;,pos:&#39;bottom-right&#39;}" aria-haspopup="true" aria-expanded="false">
+                                <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="user_action_image"><img class="md-user-image" src="./Welcome to Parent Section_files/19-VII-I_32856_Ahan Pande_Photo2d089.jpeg" alt=""></a>
+
+                            <div class="uk-dropdown uk-dropdown-small">
+
+                                <span>
+                                        <img class="md-user-image inner" src="./Welcome to Parent Section_files/19-VII-I_32856_Ahan Pande_Photo2d089.jpeg" alt="">
+                                </span>
+
+                                <ul class="uk-nav js-uk-prevent">
+                                    <li><a href="https://aisnnew.amizone.net/UserProfile/UserProfile"><i class="fa fa-user" aria-hidden="true"></i>My profile</a></li>
+                                    <li><a href="https://aisnnew.amizone.net/healthstatus/healthstatus"><i class="fa fa-heartbeat" aria-hidden="true"></i>Health Status</a></li>
+                                    <li><a href="https://aisnnew.amizone.net/EmergencyContact/EmergencyContact"><i class="fa fa-heartbeat" aria-hidden="true"></i>Emergency Contact</a></li>
+                                    <li><a href="https://aisnnew.amizone.net/Settings/Settings"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+                                    <li><a onclick="Logout()"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_main_search_form">
+            <i class="md-icon header_main_search_close material-icons fa fa-times"></i>
+            <form class="uk-form">
+                <input type="text" class="header_main_search_input">
+                <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons fa fa-search"></i></button>
+            </form>
+        </div>
+    </header><!-- main header end -->
+    <!-- main sidebar -->
+    <aside id="sidebar_main"><div class="scroll-wrapper scrollbar-inner" style="position: relative;"><div class="scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 625px;">
+
+        <div class="sidebar_main_header">
+            <div class="sidebar_logo">
+                <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate" class="">
+                    <img class="pull-left" src="./Welcome to Parent Section_files/Logo.png" alt="">
+                    <div class="pull-left logo-txt text-center">
+                        <strong>Amitranet</strong>
+                        <span>AIS, Noida</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu_section">
+            <ul class="nav-active">
+
+                    <li title="OnlineClassesHelp" id="OnlineClassesHelp">
+                        <a href="https://aisnnew.amizone.net/MicroSoftTeamLogin/MicroSoftTeamLogin">
+                            <span class="menu_icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+                            <span class="menu_title">Online Classes</span>
+                        </a>
+                    </li>
+ 
+               
+                    <li title="Dashboard">
+                        <a target="_blank" href="https://amizone.net/adminamizone/webforms/guestlectures.aspx">
+                            <span class="menu_icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+                            <span class="menu_title">Online Guest Lectures</span>
+                        </a>
+                    </li>
+
+                <li title="Mailbox" class="submenu_trigger">
+                    <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" id="messagecolor">
+                        <span class="menu_icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="menu_title">Message</span>
+                    </a>
+                    <ul id="mailboxul">
+                            <li id="Inboxs"><a href="https://aisnnew.amizone.net/mailbox/mailbox">Inbox</a></li>
+                                                    <li id="Compose"><a href="https://aisnnew.amizone.net/ComposeMail/ComposeMail">Compose</a></li>
+                                                    <li id="Send"><a href="https://aisnnew.amizone.net/SendMsg/SendMsg">Sent</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                    <li title="Academics" id="Academics">
+                        <a href="https://aisnnew.amizone.net/Academics/Academics">
+                            <span class="menu_icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                            <span class="menu_title">Academics</span>
+                        </a>
+                    </li>
+  <li title="Mailbox" class="submenu_trigger">
+                    <a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" id="messagecolor1">
+                        <span class="menu_icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="menu_title">MyProfile</span>
+                    </a>
+                    <ul id="mailboxul1">
+                            <li id="Inboxs1"><a href="https://aisnnew.amizone.net/UserProfile/UserProfile">My Profile</a></li>
+                                                    <li id="Compose1"><a href="https://aisnnew.amizone.net/healthstatus/healthstatus">Health Status</a></li>
+                                                    <li id="Send1"><a href="https://aisnnew.amizone.net/EmergencyContact/EmergencyContact">Emergency Contact</a></li>
+                                                    <li id="Settings"><a href="https://aisnnew.amizone.net/Settings/Settings">Settings</a></li>
+                    </ul>
+                </li>
+                
+                
+                    <li title="My Calender" id="Calender">
+                        <a href="https://aisnnew.amizone.net/Calender/Calender">
+                            <span class="menu_icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                            <span class="menu_title">My Calender</span>
+                        </a>
+                    </li>
+
+                    <li title="Report Card" id="Reportcard">
+                        <a href="https://aisnnew.amizone.net/PReportcard/PReportcard">
+                            <span class="menu_icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                            <span class="menu_title">Report Card</span>
+                        </a>
+                    </li>
+
+
+                
+
+                        <li title="Home Work" id="Homework">
+                            <a href="https://aisnnew.amizone.net/Homework/Homework">
+                                <span class="menu_icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                <span class="menu_title">Home Work</span>
+                            </a>
+                        </li>
+
+
+                
+
+
+
+
+                    <li title="Holiday Homework" id="HolidayHomework">
+                        <a href="https://aisnnew.amizone.net/HolidayHomework/HolidayHomework">
+                            <span class="menu_icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                            <span class="menu_title">Holiday Home Work</span>
+                        </a>
+                    </li>
+
+
+                
+                    <li title="Home Work" id="Notice">
+                        <a href="https://aisnnew.amizone.net/Notice/Notice">
+                            <span class="menu_icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                            <span class="menu_title">Notice</span>
+                        </a>
+                    </li>
+
+
+                    <li title="Home Work" id="Homework">
+                        <a href="https://aisnnew.amizone.net/KnowledgeResourcedata/KnowledgeResourcedata">
+                            <span class="menu_icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                            <span class="menu_title">Knowledge Resource</span>
+                        </a>
+                    </li>
+
+
+                
+                    <li title="Holiday" id="Holiday">
+                        <a href="https://aisnnew.amizone.net/Holiday/Holiday">
+                            <span class="menu_icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                            <span class="menu_title">Holiday</span>
+                        </a>
+                    </li>
+
+                
+
+
+
+                        <li title="Fee Info" id="Fee">
+                            <a href="https://aisnnew.amizone.net/CambridgeFee/CambridgeFee">
+                                <span class="menu_icon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                                <span class="menu_title">Cambridge Registration</span>
+                            </a>
+                        </li>
+ 
+
+                    <li title="Fee Info" id="Fee">
+                        <a href="https://aisnnew.amizone.net/fee/Fee">
+                            <span class="menu_icon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                            <span class="menu_title">Fee Info</span>
+                        </a>
+                    </li>
+                
+
+                    <li title="Upcominy Events" id="UpcomingEvents">
+                        <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=2">
+                            <span class="menu_icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                            <span class="menu_title">Upcoming Events</span>
+                        </a>
+                    </li>
+
+
+                    <li title="Achievements" id="Achievements">
+                        <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=3">
+                            <span class="menu_icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+                            <span class="menu_title">Achievements</span>
+                        </a>
+                    </li>
+                
+                    <li title="Happenings" id="Happenings">
+                        <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=1">
+                            <span class="menu_icon"><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                            <span class="menu_title">Happenings</span>
+                        </a>
+                    </li>
+
+
+ 
+
+              
+            </ul>
+        </div>
+    </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 89px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 469px; top: 0px;"></div></div></div></div></aside><!-- main sidebar end -->
+    <!-- common functions -->
+
+    <script src="./Welcome to Parent Section_files/common.min.js.download"></script>
+    <script src="./Welcome to Parent Section_files/angular.min.js.download"></script>
+
+
+    <script src="./Welcome to Parent Section_files/hychart.js.download"></script>
+    <script src="./Welcome to Parent Section_files/exporting.js.download"></script>
+    <!-- page specific plugins -->
+    
+
+    <!-- uikit functions -->
+
+    <script src="./Welcome to Parent Section_files/uikit_custom.min.js.download"></script>
+
+    <!--common functions/helpers -->
+
+    <script src="./Welcome to Parent Section_files/altair_admin_common.min.js.download"></script>
+
+
+    <script src="./Welcome to Parent Section_files/bootstrap.min.js.download"></script>
+
+
+    <script src="./Welcome to Parent Section_files/owl.carousel.min.js.download"></script>
+
+
+    <script src="./Welcome to Parent Section_files/jQuery-plugin-progressbar.js.download"></script>
+
+    <script src="./Welcome to Parent Section_files/site.js.download"></script>
+
+
+    <div id="pageContainer">
+
+        
+
+<link href="./Welcome to Parent Section_files/angular-round-progress.css" rel="stylesheet">
+
+
+<script src="./Welcome to Parent Section_files/ProgressCircle.js.download"></script>
+<script>
+
+
+
+
+
+    var app = angular.module('App', ['angular-svg-round-progressbar']);
+    app.controller('HomeTemplate', function ($scope, $http) {
+
+
+ 
+bydefaultAchi1();
+        function bydefaultAchi1() {
+            $http({
+                url: '/HomeTemplate/HomeAchievements',
+                method: 'POST',
+                //data: { "id": $scope.achieve },
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                $scope.MyAchievements1 = response.data;
+
+            });
+        }
+
+ Holidayhomework();
+        function Holidayhomework() {
+            $http({
+                url: '/HolidayHomework/HolidayHomeWorkdetail',
+                method: 'POST',
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                if (response.data != '') {
+                    //$scope.HWorkDetail = response.data;
+                    $scope.Hhide = true;
+                }
+                else {
+                    $scope.Hhide = false;
+                }
+            });
+        }
+
+
+
+
+        CheckOptionalSubject();
+        function CheckOptionalSubject() {
+            debugger;
+            $http({
+                url: '../HomeTemplate/CheckOptionalSubject',
+                method: 'POST',
+                // data: { "examid": examid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+
+                debugger;
+                var iSchoolId = '1';
+                var classid = '9'
+                var StudAdmissionNo = '32856'
+
+                $scope.check = response.data;
+
+                if (iSchoolId == 1) {
+                    if (classid == 12) {
+
+                        if (!$scope.check) {
+                            window.open('https://aisn.amizone.net/oldparent/Webforms/Parent/registration_form.aspx?adno=' + StudAdmissionNo + '', '', 'width=800px,height=700px, scrollbars=1, align=center');
+                        }
+                    }
+                }
+
+            });
+        }
+
+
+
+        active();
+        function active() {
+
+            debugger;
+            $("#Home").css("forecolor", "red");
+        }
+
+        //---- for chart
+        $scope.subjectid = 1;
+        $scope.chartid = 'column';
+        $scope.Presentid = 'Present';
+        $scope.totalPerAttendance = '';
+        var subjectid = '';
+        var SubjectName = '';
+        var bydefaultSubject = '';
+        var tt3 = '';
+        subjectchart();
+        function subjectchart() {
+            debugger;
+            $http({
+                url: '../HomeTemplate/SubjectChart',
+                method: 'POST',
+                // data: { "examid": examid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+                    $("#Markhide").show();
+                    $scope.subjectchart = response.data;
+                    $scope.Subject1 = response.data;
+                    tt = $scope.subjectchart;
+                    Subjectchartt();
+                }
+
+                else {
+                    $("#Markhide").hide();
+                }
+            });
+        }
+
+
+        SubjectChartmax();
+        function SubjectChartmax() {
+            debugger;
+            $http({
+                url: '../HomeTemplate/SubjectChartmax',
+                method: 'POST',
+                // data: { "examid": examid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+                    $("#Markhide").show();
+                    $scope.SubjectChartmax = response.data;
+                    Subjectchartt();
+                }
+
+                else {
+                    $("#Markhide").hide();
+                }
+            });
+        }
+
+
+        SubjectAvgChart();
+        function SubjectAvgChart() {
+            debugger;
+            $http({
+                url: '../HomeTemplate/SubjectAvgChart',
+                method: 'POST',
+                // data: { "examid": examid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+                    $("#Markhide").show();
+                    $scope.SubjectAvgChart = response.data;
+                    Subjectchartt();
+                }
+
+                else {
+                    $("#Markhide").hide();
+                }
+            });
+        }
+
+
+        function Subjectchartt() {
+            debugger;
+            var dataPoints = [];
+
+            var data3 = [];
+            for (var i in tt) {
+                //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+                //data.push(serie);
+                data3.push({ name: tt[i].Subject, y: tt[i].marks, subjectid: tt[i].subjectid });
+            }
+
+
+            var data4 = [];
+            for (var i in $scope.SubjectChartmax) {
+                //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+                //data.push(serie);
+                data4.push({ name: $scope.SubjectChartmax[i].Subject, y: $scope.SubjectChartmax[i].marks, subjectid: $scope.SubjectChartmax[i].subjectid });
+            }
+
+            var data5 = [];
+            for (var i in $scope.SubjectAvgChart) {
+                //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+                //data.push(serie);
+                data5.push({ name: $scope.SubjectAvgChart[i].Subject, y: $scope.SubjectAvgChart[i].marks, subjectid: $scope.SubjectAvgChart[i].subjectid });
+            }
+
+            var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'chartContainer',
+                    defaultSeriesType: 'column',
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                },
+                xAxis: {
+                    type: "category"
+                },
+
+
+                title: {
+                    text: ''
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '' + this.point.name + ' :  <b> ' + this.point.y;
+                    }
+                },
+                series: [{
+                    name: 'Average Marks',
+                    marker: {
+                        symbol: 'diamond'
+                    },
+                    data: data5,
+                    color: '#0283cc'
+                },
+                {
+                    name: 'My Marks',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: data3,
+                    color: '#2ecc71'
+                },
+
+                {
+                    name: 'Topper Marks',
+                    marker: {
+                        symbol: 'diamond'
+                    },
+                    data: data4,
+                    color: '#f0a30a'
+                }]
+
+
+
+            });
+        }
+
+
+        AttendanceChart();
+        function AttendanceChart() {
+            debugger;
+            $http({
+                url: '../HomeTemplate/AttendanceChart',
+                method: 'POST',
+                // data: { "examid": examid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+                    $("#Attendancehide").show();
+                    $scope.Attendancechart = response.data;
+                    AttendanceChartt();
+                }
+                else {
+                    $("#Attendancehide").hide();
+                }
+            });
+        }
+
+        AttendanceAbsentChart();
+        function AttendanceAbsentChart() {
+            $http({
+                url: '../HomeTemplate/AttendanceAbsentChart',
+                method: 'POST',
+                //data: { "subjectid": Presentid },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+                    $scope.Attendancechart1 = response.data;
+                    AttendanceChartt();
+                }
+            });
+
+        }
+
+
+
+        function AttendanceChartt() {
+            debugger;
+
+            var data2 = [];
+            var data = [];
+
+
+            for (var i in $scope.Attendancechart1) {
+                //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+                //data.push(serie);
+                data2.push({ name: $scope.Attendancechart1[i].MonthName, y: $scope.Attendancechart1[i].TotalAttendance });
+            }
+
+            for (var i in $scope.Attendancechart) {
+                //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+                //data.push(serie);
+                data.push({ name: $scope.Attendancechart[i].MonthName, y: $scope.Attendancechart[i].TotalAttendance });
+            }
+
+            //for (var i in $scope.Attendancechart) {
+            //    //var serie = new Array(tt[i].Subject+" : "+tt[i].marks, tt[i].marks);
+            //    //data.push(serie);
+            //    data2.push({ name: $scope.Attendancechart[i].MonthName, y: $scope.Attendancechart[i].TotalAttendance });
+            //}
+            var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'chartContainerAttendance',
+                    defaultSeriesType: 'column',
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                },
+
+                xAxis: {
+                    type: "category"
+                },
+
+
+                title: {
+                    text: ''
+                },
+
+                tooltip: {
+                    formatter: function () {
+                        return '' + this.point.name + ' :  <b> ' + this.point.y;
+                    }
+                },
+
+
+                series: [{
+                    name: 'Present',
+                    marker: {
+                        symbol: 'square'
+                    },
+                    data: data,
+                    color: '#2ecc71'
+                }, {
+                    name: 'Absent',
+                    marker: {
+                        symbol: 'diamond'
+                    },
+                    data: data2,
+                    color: '#E74A25'
+                }]
+
+
+                //series: [{
+                //    data: data2,
+                //    animation: false,
+                //    point: {
+                //    }
+                //}]
+            });
+        }
+
+
+
+        // end chart
+
+
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/Templatedetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+
+            $scope.MA = response.data.MA;
+            // $scope.Templatedetail = response.data;
+            //});
+
+            //});
+
+        });
+
+
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/AttendancePerDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+            debugger;
+            // $scope.AttendancePerDetail = response.data;
+            //$scope.AttendancePerDetail = response.data;
+            $scope.percent = response.data.total_PerAttendance;
+            //});
+
+            //});
+
+        });
+
+        //  upcoming event start
+
+
+        $http({
+            url: '/HomeTemplate/MyAchievements',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+
+            $scope.MyAchievements = response.data;
+
+        });
+
+
+        debugger;
+        $scope.Achievements = function (CalEventId) {
+            //$http({
+            //    url: '/EventDetails/MyAchievementsDetails',
+            //    method: 'POST',
+            //    data: { "CalEventId": CalEventId },
+            //    headers: { 'content-type': 'application/json' }
+            //}).then(function (response) {
+            //    debugger;
+
+            // $scope.MyAchievementsDetails = response.data;
+            window.location.href = "/EventDetails/EventDetails?eventid=" + CalEventId + "&id=2";
+            //});
+        };
+
+
+
+        // end
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/TermExamdetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            debugger;
+            // angular.forEach(response, function (value, key)
+            //{
+
+
+            $scope.TermExamdetail = response.data;
+            angular.forEach($scope.TermExamdetail, function (value, key) {
+                debugger;
+
+                if (value.SN == 1 || value.SN == 2) {
+                    $('#removeclass').hide();
+                    //$('#removeclass1').removeClass('read-more-target');
+
+                }
+                else {
+
+                    $('#removeclass').show();
+                }
+            })
+
+        });
+
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/Attendancedetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+            $scope.Attendancedetail = response.data;
+            // alert(response.data);
+            //angular.forEach(response, function (value, key) {
+
+            // if (response.data.MA == 'P' || response.data.EA == 'P') {
+            // }
+
+            //     //$scope.Date = response.data.Date;
+            //     //$scope.Day = response.data.Day;
+            //     //$scope.MA = response.data.MA;
+            //    //$scope.EA = response.data.EA;
+
+            //    $scope.Date = value.Date;
+            //    $scope.Day = value.Day;
+            //    $scope.MA = value.MA;
+            //    $scope.EA = value.EA;
+            // });
+
+            //});
+
+        });
+
+        // bind fee details
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/FeeDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+            $scope.FeeDetail = response.data;
+            // alert(response.data);
+            //angular.forEach(response, function (value, key) {
+
+
+            //     //$scope.Date = response.data.Date;
+            //     //$scope.Day = response.data.Day;
+            //     //$scope.MA = response.data.MA;
+            //    //$scope.EA = response.data.EA;
+
+            //    $scope.Date = value.Date;
+            //    $scope.Day = value.Day;
+            //    $scope.MA = value.MA;
+            //    $scope.EA = value.EA;
+            // });
+
+            //});
+
+        });
+
+
+        debugger;
+        $scope.ViewReceipt = function (feebillno1) {
+            $http({
+                url: '/HomeTemplate/MyReceipt',
+                method: 'POST',
+                data: { "feebillno1": feebillno1 },
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+
+                $scope.MyReceipt = response.data;
+                // $scope.modelPopup = response.data.iNoticeId;
+                //window.location.href = "../Homework/homeworkdetails";
+
+            });
+        };
+        //$http.post("/HomeTemplate/Templatedetail")
+
+        $http({
+            url: '/HomeTemplate/HomeworkDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            $scope.HomeworkDetail = response.data;
+            //debugger;
+            //var i = response.data.count;
+            //if (i > 0) {
+            //
+            //}
+            //else if(i==0){
+            //    $scope.HomeworkDetail = "home work not assigned";
+            //}
+            // alert(response.data);
+            //angular.forEach(response, function (value, key) {
+
+
+            //     //$scope.Date = response.data.Date;
+            //     //$scope.Day = response.data.Day;
+            //     //$scope.MA = response.data.MA;
+            //    //$scope.EA = response.data.EA;
+
+            //    $scope.Date = value.Date;
+            //    $scope.Day = value.Day;
+            //    $scope.MA = value.MA;
+            //    $scope.EA = value.EA;
+            // });
+
+            //});
+
+        });
+
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/HolidayDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+            $scope.HolidayDetail = response.data;
+            // alert(response.data);
+            //angular.forEach(response, function (value, key) {
+
+
+            //     //$scope.Date = response.data.Date;
+            //     //$scope.Day = response.data.Day;
+            //     //$scope.MA = response.data.MA;
+            //    //$scope.EA = response.data.EA;
+
+            //    $scope.Date = value.Date;
+            //    $scope.Day = value.Day;
+            //    $scope.MA = value.MA;
+            //    $scope.EA = value.EA;
+            // });
+
+            //});
+
+        });
+
+
+
+        //$http.post("/HomeTemplate/Templatedetail")
+        $http({
+            url: '/HomeTemplate/KnowlwdgeResourceDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+
+            $scope.KnowlwdgeResourceDetail = response.data;
+
+
+        });
+
+
+
+        //debugger;
+        //$scope.ViewKnowledge = function (iKDetailsID) {
+        //    $http({
+        //        url: '/KnowledgeResource/ViewKnowledgeResouceData',
+        //        method: 'POST',
+        //        data: { "iKDetailsID": iKDetailsID },
+        //        headers: { 'content-type': 'application/json' }
+        //    }).then(function (response) {
+        //        debugger;
+
+        //        //$scope.MyReceipt = response.data;
+        //        // $scope.modelPopup = response.data.iNoticeId;
+        //        window.location.href = "/KnowledgeResource/ViewKnowledgeResouceData?iKDetailsID='+iKDetailsID+'";
+
+        //    });
+        //};
+
+
+        // bind term data
+        Selectterm();
+        function Selectterm() {
+            debugger;
+            $http({
+                url: '/HomeTemplate/bindTermExam',
+                method: 'POST',
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                debugger;
+                if (response.data.length != 0) {
+
+                    $scope.bindExam = response.data;
+                }
+            });
+        }
+
+        $scope.Termchange = function (ExamElementId) {
+            debugger
+            $scope.ExamElementId = ExamElementId;
+
+            if (ExamElementId != null) {
+
+                //$scope.monthid = monthid;
+                $http({
+                    url: '/HomeTemplate/ExamElemntsDetail',
+                    method: 'POST',
+                    data: { "ExamElementId": ExamElementId },
+                    headers: { 'content-type': 'application/json' }
+                }).then(function (response) {
+                    debugger;
+
+                    if (response.data.length != 0) {
+
+                        $scope.ExamElemntsDetail = response.data;
+                    }
+                    else {
+                        $scope.ExamElemntsDetail = null;
+                    }
+                });
+            }
+            else {
+                bydefaultAchi();
+            }
+
+        }
+        // end term
+
+        //$http.post("/HomeTemplate/Templatedetail")
+
+
+        bydefaultAchi();
+        function bydefaultAchi() {
+            $http({
+                url: '/HomeTemplate/ExamElemntsDetail',
+                method: 'POST',
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+
+                $scope.ExamElemntsDetail = response.data;
+
+
+            });
+        }
+
+        // bind subject marks details
+
+
+        $scope.SubjectMarks = function (ExamElementId) {
+
+            alert('hi')
+            $http({
+
+                url: '/HomeTemplate/SubjectMarksDetail',
+                method: 'POST',
+                data: { "ExamElementId": ExamElementId },
+                //data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                //'<figure class="pull-left"><img src="../assets/img/test-1.png" alt="AISN"></figure>' +
+                //$scope.SubjectMarksDetail = response.data;
+                var r = response.data;
+                $("#collapseOne" + ExamElementId).remove();
+                var html = "";
+                html += '<div id="collapseOne' + ExamElementId + '" data-toggle="collapse"  class="panel-collapse collapse in">' +
+                               '<div class="panel-body">' +
+                                   '<div class="marks-inner clearfix">' +
+
+                                       '<div class="marks-content pull-left">' +
+                                           '<ul>';
+                for (var i = 0; i < r.length; i++) {
+                    if ('9' != "12") {
+                        html += '<li>' + '<font color="#00bbd9">' + r[i].SubjectName + '</font>' + '-' + r[i].MarksSecured + '/' + r[i].MaxMarks + '</li>';
+                    }
+                    else {
+                        html += '<li>' + '<font color="#00bbd9">' + r[i].SubjectName + '</font>' + '</li>';
+                    }
+                }
+                html += '</ul></div></div></div></div>';
+                $("[id^=collapseOne]").hide();
+                $("#" + ExamElementId).append(html);
+
+                $("#" + ExamElementId).show();
+            });
+        };
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $("#defaulta").click();
+            }, 2000);
+        });
+        //--- bind upcoming events
+
+        $http({
+            url: '/HomeTemplate/EventDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            debugger;
+            $scope.EventDetail = response.data;
+
+        });
+
+
+
+        // bind notice top 3
+
+        $http({
+            url: '/HomeTemplate/NoticeDetail',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            debugger;
+            $scope.NoticeDetail = response.data;
+
+        });
+
+        // bind happy birthday message
+        debugger;
+        $http({
+            url: '/HomeTemplate/HomeTemplate',
+            method: 'POST',
+            //data: JSON.stringify(data),
+            headers: { 'content-type': 'application/json' }
+        }).then(function (response) {
+            debugger;
+            $scope.HomeTemplate = response.data;
+
+        });
+        //---- doctors report data----- start---
+
+        $scope.insert = {
+            ParentMessage: ''
+        };
+
+
+     HealthstateCheckDP();
+ HealthstateCheckDP1();
+        SelectHealthStatusDP();
+         
+   
+        function SelectHealthStatusDP() {
+            $http({
+                url: '../HomeTemplate/SelectHealthStatusDP',
+                method: 'POST',
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                if (response.data.length != 0) {
+
+                    $('#lblDoctorName').text(response.data.Doctorname);
+
+                    var rows = "<tr>" +
+                        "<td style='border: 1px solid lightgray;'>" + response.data.Typeofinjury + "</td>" +
+                        "<td style='border: 1px solid lightgray;'>" + response.data.InjuryDate + "</td>" +
+                        "<td style='border: 1px solid lightgray;'>" + response.data.Prescription + "</td>" +
+                    "</tr>";
+                    $('#tblDoctorComment tbody').append(rows);
+                }
+                else {
+
+                }
+            });
+        }
+
+        function HealthstateCheckDP1() {
+            $http({
+                url: '../HomeTemplate/HealthstateCheckDP',
+                method: 'POST',
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                if (response.data == 'True') {
+                    $('#style_switcher3').show();
+                }
+                else {
+                    $('#style_switcher3').hide();
+                }
+            });
+        }
+
+        $scope.parentCommentSave = function () {
+            $scope.insert.ParentMessage = $scope.parentComment;
+            HealthstateDPUpdate($scope.insert)
+        }
+
+        function HealthstateDPUpdate(data) {
+            $http({
+                url: '../HomeTemplate/HealthstateDPUpdate',
+                method: 'POST',
+                data: JSON.stringify(data),
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                if (response.data == 'Updated') {
+                    alert("Message saved Successfully.");
+                    $('#style_switcher3').hide();
+                }
+                else {
+
+                    alert("Not Updated Successfully.");
+                    $('#style_switcher3').hide();
+                }
+            });
+        }
+
+
+ function HealthstateCheckDP() {
+            $http({
+                url: '../HomeTemplate/HeathMarquee',
+                method: 'POST',
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+
+
+                $scope.status = response.data;
+            });
+        }
+
+
+
+        // -- end---
+
+$(document).ready(function () {
+            setTimeout(function () {
+                var counter = 0;
+                $(".panel-collapse").each(function () {
+                    if (counter == "0") {
+                        $(this).addClass('in');
+                        counter = "1";
+                    }
+                });
+            }, 2000);
+        });
+
+    });
+</script>
+
+
+<style>
+    .dropdown-group .form-control {
+        display: inline-block;
+        width: auto;
+        line-height: 14px;
+    }
+
+
+    body {
+        background-color: #e9efec;
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    }
+
+    .progress-circle {
+    }
+
+        .progress-circle path {
+            fill: #29B6F6;
+        }
+
+    .percentageValue {
+        left: 0;
+        right: 0;
+        top: 38%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 750;
+    }
+
+    .progress-bar-outer {
+        position: relative;
+    }
+ #tblDoctorComment thead th {
+        border: 1px solid #ddd;
+    }
+textarea {       
+        color: #424242;
+    }
+#myFeedback {
+        z-index: 9999;
+        overflow:scroll;
+    }
+    #myFeedback .modal-dialog {
+        margin: 10px;
+        width: 100%;
+    }
+</style>
+
+
+
+<div id="page_content" ng-app="App" ng-controller="HomeTemplate" class="ng-scope">
+    <div id="page_content_inner">
+<!-- ngIf: status==1 -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="panel info-box panel-white">
+                                <div class="main-title home-upper">
+                                    <h2 class="pull-left">Attendance</h2>
+
+                                </div>
+                                <div class="panel-body attendence text-center">
+                                    <div class="info-box-stats attendence-bar">
+                                        
+
+                                        
+                                        <div class="progress-bar-outer">
+                                            <div class="round-progress-wrapper ng-isolate-scope" max="100" current="percent" color="#0283cc" bgcolor="#eaeaea" radius="60" stroke="20" semi="false" rounded="false" clockwise="true" responsive="false" duration="500" animation="easeInOutQuart" animation-delay="0" style="width: auto; position: relative; padding-bottom: 0px;">
+<svg class="round-progress" xmlns="http://www.w3.org/2000/svg" role="progressbar" aria-valuemin="0" viewBox="0 0 120 120" aria-valuemax="100" aria-valuenow="100" style="top: 0px; left: 0px; position: static; width: 120px; height: 120px; overflow: hidden;">
+<circle fill="none" cx="60" cy="60" r="50" style="stroke: rgb(234, 234, 234); stroke-width: 20px;"></circle>
+<path fill="none" transform="" style="stroke: rgb(2, 131, 204); stroke-width: 20px; stroke-linecap: butt;" d="M 59.9999127335374 10.000000000076156 A 50 50 0 1 0 60 10"></path>
+<g ng-transclude=""></g>
+</svg>
+</div>
+                                            <div class="percentageValue ng-binding"> 100%</div>
+                                            
+                                        </div>
+                                        <span class="info-box-title" style=" font-size: 12px;">Total Attendance</span>
+                                        <span class="label label-success ng-binding">Not Marked</span>
+
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8">
+                            <div class="panel term-main info-box panel-white clearfix">
+                                <div class="main-title home-upper">
+                                    <h2 class="pull-left">Happenings </h2>
+                                    <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=1" class="read-more pull-right">
+                                        <i class="fa fa-eye fa-lg"></i> View all
+                                    </a>
+                                </div>
+                                <div class="panel-body happenings">
+                                    <!-- ngRepeat: Templist in MyAchievements --><div class="happening-container first ng-scope" ng-repeat="Templist in MyAchievements">
+                                        
+                                        <!-- ngIf: Templist.sUrl !='' -->
+                                        
+
+                                        <div class="happening-content pull-left">
+                                            <div class="box-hover">
+                                                <span class="inner-txt ng-binding">ONLINE CLASSES for Classes NUR- XII</span>
+                                                <span class="notice-date ng-binding">Aug 09, 2021</span>
+                                                <a class="read-more" ng-click="Achievements(Templist.CalEventId)">Read More...</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- end ngRepeat: Templist in MyAchievements --><div class="happening-container first ng-scope" ng-repeat="Templist in MyAchievements">
+                                        
+                                        <!-- ngIf: Templist.sUrl !='' -->
+                                        
+
+                                        <div class="happening-content pull-left">
+                                            <div class="box-hover">
+                                                <span class="inner-txt ng-binding">ONLINE CLASSES for Classes NUR- XII</span>
+                                                <span class="notice-date ng-binding">Aug 04, 2021</span>
+                                                <a class="read-more" ng-click="Achievements(Templist.CalEventId)">Read More...</a>
+                                            </div>
+                                        </div>
+                                    </div><!-- end ngRepeat: Templist in MyAchievements -->
+
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12">
+
+
+                            
+
+
+                            <div class="panel panel-holiday" id="Attendancehide">
+                                <div class="main-title">
+                                    <h2 class="pull-left">Attendance</h2>
+                                    <div class="filter-block pull-right mt-12 mt-sm-15">
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chartContainerAttendance" style="height:250px" data-highcharts-chart="1"><div id="highcharts-pytmrxh-2" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 707px; height: 250px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root " style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="707" height="250" viewBox="0 0 707 250"><desc>Created with Highcharts 6.0.3</desc><defs><clippath id="highcharts-pytmrxh-3"><rect x="0" y="0" width="623" height="162" fill="none"></rect></clippath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="707" height="250" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="74" y="10" width="623" height="162"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 198.5 10 L 198.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 322.5 10 L 322.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 447.5 10 L 447.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 571.5 10 L 571.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 696.5 10 L 696.5 172" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 73.5 10 L 73.5 172" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 74 172.5 L 697 172.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 74 118.5 L 697 118.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 74 64.5 L 697 64.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 74 9.5 L 697 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="74" y="10" width="623" height="162"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 198.5 172 L 198.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 322.5 172 L 322.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 447.5 172 L 447.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 571.5 172 L 571.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 696.5 172 L 696.5 182" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 73.5 172 L 73.5 182" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 74 172.5 L 697 172.5"></path></g><g class="highcharts-axis highcharts-yaxis "><text x="26.078125" text-anchor="middle" transform="translate(0,0) rotate(270 26.078125 91)" class="highcharts-axis-title" style="color:#666666;fill:#666666;" y="91"><tspan>Values</tspan></text><path fill="none" class="highcharts-axis-line" d="M 74 10 L 74 172"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-tracker " transform="translate(74,10) scale(1 1)" clip-path="url(#highcharts-pytmrxh-3)"><rect x="28.5" y="54.5" width="30" height="108" fill="#2ecc71" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="152.5" y="54.5" width="30" height="108" fill="#2ecc71" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="277.5" y="54.5" width="30" height="108" fill="rgb(46,204,113)" stroke="#ffffff" stroke-width="1" class="highcharts-point "></rect><rect x="401.5" y="54.5" width="30" height="108" fill="#2ecc71" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="526.5" y="54.5" width="30" height="108" fill="#2ecc71" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series " transform="translate(74,10) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-tracker " transform="translate(74,10) scale(1 1)" clip-path="url(#highcharts-pytmrxh-3)"><rect x="65.5" y="162.5" width="30" height="0" fill="#E74A25" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="190.5" y="162.5" width="30" height="0" fill="#E74A25" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="314.5" y="162.5" width="30" height="0" fill="#E74A25" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="439.5" y="162.5" width="30" height="0" fill="#E74A25" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect><rect x="563.5" y="162.5" width="30" height="0" fill="#E74A25" stroke="#ffffff" stroke-width="1" class="highcharts-point"></rect></g><g class="highcharts-markers highcharts-series-1 highcharts-column-series " transform="translate(74,10) scale(1 1)" clip-path="none"></g></g><g class="highcharts-button highcharts-contextbutton" style="cursor:pointer;" stroke-linecap="round" transform="translate(673,10)"><title>Chart context menu</title><rect fill="#ffffff" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#666666" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><text x="354" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="354" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-legend" transform="translate(269,206)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="168" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-undefined highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Present</tspan></text><rect x="2" y="4" width="12" height="12" fill="#2ecc71" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-column-series highcharts-color-undefined highcharts-series-1" transform="translate(94.921875,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>Absent</tspan></text><rect x="2" y="4" width="12" height="12" fill="#E74A25" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="136.3" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>March</tspan></text><text x="260.9" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>April</tspan></text><text x="385.5" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>June</tspan></text><text x="510.09999999999997" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>July</tspan></text><text x="634.6999999999999" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="191" opacity="1"><tspan>August</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="59" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="176" opacity="1"><tspan>0</tspan></text><text x="59" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="122" opacity="1"><tspan>50</tspan></text><text x="59" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="68" opacity="1"><tspan>100</tspan></text><text x="59" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>150</tspan></text></g><text x="697" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="245"></text><g class="highcharts-label highcharts-tooltip highcharts-color-undefined" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(327,-9999)" opacity="0" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 76.5 0.5 C 79.5 0.5 79.5 0.5 79.5 3.5 L 79.5 31.5 C 79.5 34.5 79.5 34.5 76.5 34.5 L 45.5 34.5 39.5 40.5 33.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 76.5 0.5 C 79.5 0.5 79.5 0.5 79.5 3.5 L 79.5 31.5 C 79.5 34.5 79.5 34.5 76.5 34.5 L 45.5 34.5 39.5 40.5 33.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 76.5 0.5 C 79.5 0.5 79.5 0.5 79.5 3.5 L 79.5 31.5 C 79.5 34.5 79.5 34.5 76.5 34.5 L 45.5 34.5 39.5 40.5 33.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(247,247,247,0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 76.5 0.5 C 79.5 0.5 79.5 0.5 79.5 3.5 L 79.5 31.5 C 79.5 34.5 79.5 34.5 76.5 34.5 L 45.5 34.5 39.5 40.5 33.5 34.5 3.5 34.5 C 0.5 34.5 0.5 34.5 0.5 31.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#2ecc71" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan>June :  </tspan><tspan style="font-weight:bold" dx="0"> 100</tspan></text></g></svg></div></div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="panel panel-holiday" id="Markhide" style="display: none;">
+                                <div class="main-title">
+                                    <h2 class="pull-left">Marks Information</h2>
+                                    <div class="filter-block pull-right mt-12 mt-sm-15">
+
+                                        <a href="https://aisnnew.amizone.net/Reportcard/Reportcard" class="btn btn-primary pull-right">
+                                            <i class="fa fa-eye fa-lg"></i> View all
+                                        </a>
+                                    </div>
+                                </div>
+                                <div style="text-align:center;"><span><strong>Term1</strong></span></div>
+                                <div class="panel-body">
+                                    <div id="chartContainer" style="height:250px"></div>
+
+                                </div>
+                            </div>
+
+                            
+                            <div class="main-box clearfix">
+                                <header class="main-box-header clearfix">
+                                    <h2 class="pull-left">Attendance</h2>
+                                    <div class="filter-block pull-right">
+
+                                        <a href="https://aisnnew.amizone.net/Attendance/Attendance" class="btn btn-primary pull-right">
+                                            <i class="fa fa-eye fa-lg"></i> View all
+                                        </a>
+                                    </div>
+                                </header>
+                                <div class="main-box-body clearfix">
+                                    <div id="mob-table">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="desc"><span>Date</span></a></th>
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="asc"><span>Day</span></a></th>
+                                                    <th class="text-center"><span>Morning</span></th>
+                                                    <th class="text-center"><span>Evening</span></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- ngRepeat: Templist in Attendancedetail --><tr ng-repeat="Templist in Attendancedetail" class="ng-scope">
+                                                    <td data-title="Date" class="ng-binding">
+                                                        Aug 10, 2021
+                                                    </td>
+                                                    <td data-title="Day" class="ng-binding">
+                                                        Tuesday
+                                                    </td>
+                                                    <td class="text-center" data-title="Morning">
+                                                        <!-- ngIf: Templist.MA== 'P' --><div ng-if="Templist.MA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.MA== 'P' -->
+                                                        <!-- ngIf: Templist.MA== 'PL' -->
+                                                        <!-- ngIf: Templist.MA== 'DL' -->
+                                                        <!-- ngIf: Templist.MA == 'A' -->
+                                                        <!-- ngIf: Templist.MA == 'H' -->
+                                                        <!-- ngIf: Templist.MA == null -->
+
+
+
+                                                    </td>
+
+                                                    <td class="text-center" data-title="Evening">
+
+                                                        <!-- ngIf: Templist.EA== 'P' --><div ng-if="Templist.EA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.EA== 'P' -->
+                                                        <!-- ngIf: Templist.EA== 'PL' -->
+                                                        <!-- ngIf: Templist.EA== 'DL' -->
+                                                        <!-- ngIf: Templist.EA == 'A' -->
+                                                        <!-- ngIf: Templist.EA == 'H' -->
+                                                        <!-- ngIf: Templist.EA == null -->
+
+                                                    </td>
+                                                </tr><!-- end ngRepeat: Templist in Attendancedetail --><tr ng-repeat="Templist in Attendancedetail" class="ng-scope">
+                                                    <td data-title="Date" class="ng-binding">
+                                                        Aug 09, 2021
+                                                    </td>
+                                                    <td data-title="Day" class="ng-binding">
+                                                        Monday
+                                                    </td>
+                                                    <td class="text-center" data-title="Morning">
+                                                        <!-- ngIf: Templist.MA== 'P' --><div ng-if="Templist.MA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.MA== 'P' -->
+                                                        <!-- ngIf: Templist.MA== 'PL' -->
+                                                        <!-- ngIf: Templist.MA== 'DL' -->
+                                                        <!-- ngIf: Templist.MA == 'A' -->
+                                                        <!-- ngIf: Templist.MA == 'H' -->
+                                                        <!-- ngIf: Templist.MA == null -->
+
+
+
+                                                    </td>
+
+                                                    <td class="text-center" data-title="Evening">
+
+                                                        <!-- ngIf: Templist.EA== 'P' --><div ng-if="Templist.EA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.EA== 'P' -->
+                                                        <!-- ngIf: Templist.EA== 'PL' -->
+                                                        <!-- ngIf: Templist.EA== 'DL' -->
+                                                        <!-- ngIf: Templist.EA == 'A' -->
+                                                        <!-- ngIf: Templist.EA == 'H' -->
+                                                        <!-- ngIf: Templist.EA == null -->
+
+                                                    </td>
+                                                </tr><!-- end ngRepeat: Templist in Attendancedetail --><tr ng-repeat="Templist in Attendancedetail" class="ng-scope">
+                                                    <td data-title="Date" class="ng-binding">
+                                                        Aug 06, 2021
+                                                    </td>
+                                                    <td data-title="Day" class="ng-binding">
+                                                        Friday
+                                                    </td>
+                                                    <td class="text-center" data-title="Morning">
+                                                        <!-- ngIf: Templist.MA== 'P' --><div ng-if="Templist.MA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.MA== 'P' -->
+                                                        <!-- ngIf: Templist.MA== 'PL' -->
+                                                        <!-- ngIf: Templist.MA== 'DL' -->
+                                                        <!-- ngIf: Templist.MA == 'A' -->
+                                                        <!-- ngIf: Templist.MA == 'H' -->
+                                                        <!-- ngIf: Templist.MA == null -->
+
+
+
+                                                    </td>
+
+                                                    <td class="text-center" data-title="Evening">
+
+                                                        <!-- ngIf: Templist.EA== 'P' --><div ng-if="Templist.EA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.EA== 'P' -->
+                                                        <!-- ngIf: Templist.EA== 'PL' -->
+                                                        <!-- ngIf: Templist.EA== 'DL' -->
+                                                        <!-- ngIf: Templist.EA == 'A' -->
+                                                        <!-- ngIf: Templist.EA == 'H' -->
+                                                        <!-- ngIf: Templist.EA == null -->
+
+                                                    </td>
+                                                </tr><!-- end ngRepeat: Templist in Attendancedetail --><tr ng-repeat="Templist in Attendancedetail" class="ng-scope">
+                                                    <td data-title="Date" class="ng-binding">
+                                                        Aug 05, 2021
+                                                    </td>
+                                                    <td data-title="Day" class="ng-binding">
+                                                        Thursday
+                                                    </td>
+                                                    <td class="text-center" data-title="Morning">
+                                                        <!-- ngIf: Templist.MA== 'P' --><div ng-if="Templist.MA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.MA== 'P' -->
+                                                        <!-- ngIf: Templist.MA== 'PL' -->
+                                                        <!-- ngIf: Templist.MA== 'DL' -->
+                                                        <!-- ngIf: Templist.MA == 'A' -->
+                                                        <!-- ngIf: Templist.MA == 'H' -->
+                                                        <!-- ngIf: Templist.MA == null -->
+
+
+
+                                                    </td>
+
+                                                    <td class="text-center" data-title="Evening">
+
+                                                        <!-- ngIf: Templist.EA== 'P' --><div ng-if="Templist.EA== &#39;P&#39;" class="ng-scope">
+
+
+                                                            <span class="label label-success ng-binding">
+                                                                P
+                                                            </span>
+                                                        </div><!-- end ngIf: Templist.EA== 'P' -->
+                                                        <!-- ngIf: Templist.EA== 'PL' -->
+                                                        <!-- ngIf: Templist.EA== 'DL' -->
+                                                        <!-- ngIf: Templist.EA == 'A' -->
+                                                        <!-- ngIf: Templist.EA == 'H' -->
+                                                        <!-- ngIf: Templist.EA == null -->
+
+                                                    </td>
+                                                </tr><!-- end ngRepeat: Templist in Attendancedetail -->
+                                                <tr ng-show="!Attendancedetail.length" style="display:none !important;" class="ng-hide">
+                                                    <td colspan="4" align="center">
+                                                        Attendance not marked
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+
+                            <div class="main-box payment-info clearfix">
+                                <header class="main-box-header clearfix">
+                                    <h2 class="pull-left">Payment Status</h2>
+<h6><center>Please read Principal’s letter in the Notice section</center></h6>
+                                    <div class="filter-block pull-right">
+
+                                        <a href="https://aisnnew.amizone.net/fee/fee" class="btn btn-primary pull-right">
+                                            <i class="fa fa-eye fa-lg"></i> View all
+                                        </a>
+                                    </div>
+                                </header>
+                                <div class="main-box-body clearfix">
+                                    <div id="mob-table">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="desc"><span>Bill No.</span></a></th>
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="desc"><span>Quarter</span></a></th>
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="asc"><span>Amount</span></a></th>
+                                                    <th class="text-center"><span>Status</span></th>
+                                                    <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="asc"><span>Feebill Date</span></a></th>
+                                                    <th class="text-center"><span>Action</span></th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                      <!-- ngRepeat: Templist in FeeDetail --><tr ng-repeat="Templist in FeeDetail" class="ng-scope">
+                                                    <td data-title="FeebillNo" class="ng-binding">
+                                                        380131<br>
+                                                        <!-- ngIf: Templist.rowid !='' --><div ng-if="Templist.rowid !=&#39;&#39;" class="ng-scope">
+                                                            <a class="btn btn-danger bg-btn pay-btn fee-bill" href="https://aisnnew.amizone.net/Invoice/Invoice?rowid=C7EB0070-C35E-4B6C-A7F6-BA644F909AE1" target="_blank"> Print Fee Bill </a>
+
+                                                        </div><!-- end ngIf: Templist.rowid !='' -->
+                                                    </td>
+                                                    <td data-title="Months" class="ng-binding">
+                                                        Second Quarter
+                                                    </td>
+                                                    <td data-title="Amount" class="ng-binding">
+                                                        19667
+                                                    </td>
+                                                    <td class="text-center" data-title="Status">
+
+
+                                                            <!-- ngIf: Templist.receiptno !='0' -->
+                                                            <!-- ngIf: Templist.receiptno =='0' --><div ng-if="Templist.receiptno ==&#39;0&#39;" class="ng-scope">
+                                                                <!-- ngIf: Templist.Status =='UnPaid' --><div ng-if="Templist.Status ==&#39;UnPaid&#39;" class="ng-scope">
+
+                                                                    <span class="label label-danger ng-binding"> UnPaid</span>
+                                                                </div><!-- end ngIf: Templist.Status =='UnPaid' -->
+                                                                <!-- ngIf: Templist.Status =='Paid' -->
+                                                            </div><!-- end ngIf: Templist.receiptno =='0' -->
+
+                                                            <!-- ngIf: Templist.receiptno !='0' && Templist.checkamount =='0' -->
+                                                       
+
+
+
+                                                            
+
+
+                                                        </td>
+                                                        <td data-title="Due Date" class="ng-binding">
+                                                            Jul 06, 2021
+                                                        </td>
+
+                                                        <td class="text-center" data-title="Action">
+
+
+                                                            <!-- ngIf: Templist.receiptno !='0' && Templist.checkamount !='0' -->
+
+                                                            <!-- ngIf: Templist.maxbillno==Templist.feebillno1 --><div ng-if="Templist.maxbillno==Templist.feebillno1" class="ng-scope">
+
+                                                                <!-- ngIf: Templist.amount=='0' || Templist.amount=='0.00' -->
+
+
+                                                                <!-- ngIf: (Templist.amount!='0' || Templist.amount!='0.00') && Templist.Status =='UnPaid' --><div ng-if="(Templist.amount!=&#39;0&#39; || Templist.amount!=&#39;0.00&#39;) &amp;&amp; Templist.Status ==&#39;UnPaid&#39;" class="ng-scope">
+                                                                    
+
+                                                                    <a class="btn btn-danger bg-btn pay-btn" href="https://aisnnew.amizone.net/Request/Request?fbi=C7EB0070-C35E-4B6C-A7F6-BA644F909AE1" id="paylink">Pay Now <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                                                                    
+                                                                </div><!-- end ngIf: (Templist.amount!='0' || Templist.amount!='0.00') && Templist.Status =='UnPaid' -->
+
+                                                            </div><!-- end ngIf: Templist.maxbillno==Templist.feebillno1 -->
+
+                                                            <!-- ngIf: Templist.maxbillno!=Templist.feebillno1 -->
+                                                        </td>
+                                                </tr><!-- end ngRepeat: Templist in FeeDetail --><tr ng-repeat="Templist in FeeDetail" class="ng-scope">
+                                                    <td data-title="FeebillNo" class="ng-binding">
+                                                        376720<br>
+                                                        <!-- ngIf: Templist.rowid !='' --><div ng-if="Templist.rowid !=&#39;&#39;" class="ng-scope">
+                                                            <a class="btn btn-danger bg-btn pay-btn fee-bill" href="https://aisnnew.amizone.net/Invoice/Invoice?rowid=3918D2C3-7097-4B22-BA18-AE0F28C0BEEB" target="_blank"> Print Fee Bill </a>
+
+                                                        </div><!-- end ngIf: Templist.rowid !='' -->
+                                                    </td>
+                                                    <td data-title="Months" class="ng-binding">
+                                                        First Quarter
+                                                    </td>
+                                                    <td data-title="Amount" class="ng-binding">
+                                                        29500.00
+                                                    </td>
+                                                    <td class="text-center" data-title="Status">
+
+
+                                                            <!-- ngIf: Templist.receiptno !='0' --><div ng-if="Templist.receiptno !=&#39;0&#39;" class="ng-scope">
+                                                                <!-- ngIf: Templist.Status =='Paid' --><div ng-if="Templist.Status ==&#39;Paid&#39;" class="ng-scope">
+                                                                    <span class="label label-success ng-binding"> Paid</span>
+
+                                                                </div><!-- end ngIf: Templist.Status =='Paid' -->
+                                                            </div><!-- end ngIf: Templist.receiptno !='0' -->
+                                                            <!-- ngIf: Templist.receiptno =='0' -->
+
+                                                            <!-- ngIf: Templist.receiptno !='0' && Templist.checkamount =='0' -->
+                                                       
+
+
+
+                                                            
+
+
+                                                        </td>
+                                                        <td data-title="Due Date" class="ng-binding">
+                                                            NIL
+                                                        </td>
+
+                                                        <td class="text-center" data-title="Action">
+
+
+                                                            <!-- ngIf: Templist.receiptno !='0' && Templist.checkamount !='0' --><div ng-if="Templist.receiptno !=&#39;0&#39; &amp;&amp; Templist.checkamount !=&#39;0&#39;" class="ng-scope">
+                                                                <a class="btn btn-primary bg-btn" target="_blank" data-toggle="modal" data-target="#modelPopup" role="dialog" ng-click="ViewReceipt(Templist.feebillno1)">
+                                                                    <i class="fa fa-eye fa-lg" aria-hidden="true"></i> View-Receipt
+                                                                </a>
+                                                            </div><!-- end ngIf: Templist.receiptno !='0' && Templist.checkamount !='0' -->
+
+                                                            <!-- ngIf: Templist.maxbillno==Templist.feebillno1 -->
+
+                                                            <!-- ngIf: Templist.maxbillno!=Templist.feebillno1 --><div ng-if="Templist.maxbillno!=Templist.feebillno1" class="ng-scope">
+
+                                                                <a class="btn btn-danger bg-btn pay-btn" href="https://aisnnew.amizone.net/Request/Request?fbi=3918D2C3-7097-4B22-BA18-AE0F28C0BEEB" style="display:none">Pay Now <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                                                            </div><!-- end ngIf: Templist.maxbillno!=Templist.feebillno1 -->
+                                                        </td>
+                                                </tr><!-- end ngRepeat: Templist in FeeDetail -->
+
+
+                                                <tr ng-show="!FeeDetail.length" style="display:none !important;" class="ng-hide">
+                                                    <td colspan="5">
+                                                        Fee Invoice not genarted
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal fee-modal holiday-modal fade" id="modelPopup" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <div class="widget-header">
+                                                    <h2>Receipts Detail</h2>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body text">
+
+
+
+                                                <div class="table-responsive clearfix">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="asc"><span>Receipt No.</span></a></th>
+                                                                <th class="text-center"><span>Amount</span></th>
+                                                                <th><a href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#" class="asc"><span>Receipt Date</span></a></th>
+                                                                <th class="text-center"><span> Receipt</span></th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- ngRepeat: Templists in MyReceipt -->
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-body event-sec">
+                                <div class="main-title">
+                                    <h2 class="pull-left">Upcoming Events</h2>
+                                    <div class="filter-block pull-right">
+
+                                        <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=2" class="btn btn-primary pull-right">
+                                            <i class="fa fa-eye fa-lg"></i> View all
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- ngRepeat: Templist in EventDetail --><div class="timeline ng-scope" ng-repeat="Templist in EventDetail">
+
+                                    <!-- ngIf: Templist.Sno=='1' -->
+
+                                    <!-- ngIf: Templist.Sno=='2' -->
+
+                                    <!-- ngIf: Templist.Sno=='3' -->
+
+                                    <!-- ngIf: Templist.Sno=='4' --><article class="timeline-item alt ng-scope" ng-if="Templist.Sno==&#39;4&#39;">
+                                        
+                                        <div class="timeline-desk">
+                                            <div class="panel">
+                                                <div class="panel-body">
+                                                    <span class="arrow-alt"></span>
+                                                    <span class="timeline-icon purple"></span>
+                                                    <span class="timeline-date ng-binding"> Wednesday</span>
+                                                    <h1 class="red ng-binding" style="color: rgb(34, 34, 34);">  Aug 11, 2021  </h1>
+                                                    <p class="ng-binding">ONLINE CLASSES for Classes NUR- XII</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article><!-- end ngIf: Templist.Sno=='4' -->
+
+                                </div><!-- end ngRepeat: Templist in EventDetail --><div class="timeline ng-scope" ng-repeat="Templist in EventDetail">
+
+                                    <!-- ngIf: Templist.Sno=='1' -->
+
+                                    <!-- ngIf: Templist.Sno=='2' -->
+
+                                    <!-- ngIf: Templist.Sno=='3' --><article class="timeline-item ng-scope" ng-if="Templist.Sno==&#39;3&#39;">
+                                        
+                                        <div class="timeline-desk">
+                                            <div class="panel">
+                                                <div class="panel-body">
+                                                    <span class="arrow"></span>
+                                                    <span class="timeline-icon blue"></span>
+                                                    <span class="timeline-date ng-binding"> Friday</span>
+                                                    <h1 class="red ng-binding" style="color: rgb(34, 34, 34);">  Aug 13, 2021  </h1>
+                                                    <p class="ng-binding">ONLINE CLASSES for Classes NUR- XII</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article><!-- end ngIf: Templist.Sno=='3' -->
+
+                                    <!-- ngIf: Templist.Sno=='4' -->
+
+                                </div><!-- end ngRepeat: Templist in EventDetail --><div class="timeline ng-scope" ng-repeat="Templist in EventDetail">
+
+                                    <!-- ngIf: Templist.Sno=='1' -->
+
+                                    <!-- ngIf: Templist.Sno=='2' --><article class="timeline-item alt ng-scope" ng-if="Templist.Sno==&#39;2&#39;">
+                                        
+                                        <div class="timeline-desk">
+                                            <div class="panel">
+                                                <div class="panel-body">
+                                                    <span class="arrow-alt"></span>
+                                                    <span class="timeline-icon green"></span>
+                                                    <span class="timeline-date ng-binding"> Monday</span>
+                                                    <h1 class="red ng-binding" style="color: rgb(34, 34, 34);">  Aug 16, 2021  </h1>
+                                                    <p class="ng-binding">ONLINE CLASSES for Classes NUR- XII</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article><!-- end ngIf: Templist.Sno=='2' -->
+
+                                    <!-- ngIf: Templist.Sno=='3' -->
+
+                                    <!-- ngIf: Templist.Sno=='4' -->
+
+                                </div><!-- end ngRepeat: Templist in EventDetail --><div class="timeline ng-scope" ng-repeat="Templist in EventDetail">
+
+                                    <!-- ngIf: Templist.Sno=='1' --><article class="timeline-item ng-scope" ng-if="Templist.Sno==&#39;1&#39;">
+                                        
+                                        <div class="timeline-desk">
+                                            <div class="panel">
+                                                <div class="panel-body">
+
+                                                    <span class="arrow"></span>
+                                                    <span class="timeline-icon red"></span>
+                                                    <span class="timeline-date ng-binding"> Thursday</span>
+                                                    <h1 class="red ng-binding" style="color: rgb(34, 34, 34);">  Aug 19, 2021  </h1>
+                                                    <p class="ng-binding">ONLINE CLASSES for Classes NUR- XII</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </article><!-- end ngIf: Templist.Sno=='1' -->
+
+                                    <!-- ngIf: Templist.Sno=='2' -->
+
+                                    <!-- ngIf: Templist.Sno=='3' -->
+
+                                    <!-- ngIf: Templist.Sno=='4' -->
+
+                                </div><!-- end ngRepeat: Templist in EventDetail -->
+                                <div class="panel ng-hide" ng-show="!EventDetail.length" style="display:none;">
+                                    <div class="panel-body">
+                                        <p>
+                                            Upcoming Events Not Entered.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="clearfix">&nbsp;</div>
+                            </div>
+<div class="event-section bg-white mt-15">
+                                <div class="main-title">
+                                    <h2 class="pull-left">Achievements</h2>
+                                    <div class="filter-block pull-right mt-12">
+
+                                        <a href="https://aisnnew.amizone.net/Achievements/Achievements?id=3" target="_blank" class="btn btn-primary pull-right">
+                                            <i class="fa fa-eye fa-lg"></i> View all
+                                        </a>
+
+
+
+                                    </div>
+                                </div>
+                                <!-- ngRepeat: Templist in MyAchievements1 --><div class="panel-body ng-scope" ng-repeat="Templist in MyAchievements1">
+                                    <div class="timeline-box">
+                                        <!-- ngIf: Templist.sUrl !='' --><div class="timeline-img ng-scope" ng-if="Templist.sUrl !=&#39;&#39;">
+                                            <img ng-src="https://aisnnew.amizone.net/Webforms/event_photo/46567.jpg" src="./Welcome to Parent Section_files/46567.jpg">
+                                        </div><!-- end ngIf: Templist.sUrl !='' -->
+                                        <!-- ngIf: Templist.sUrl =='' -->
+                                        <div class="timeline-txt bg-orange">
+                                           
+                                           
+                                <div class="sub-title">
+                                <h3 class="title ng-binding">Inter School competition </h3>
+                                <strong class="pull-right ng-binding">Nov 06, 2020</strong>
+                              </div>
+
+
+
+
+
+                                            <p class="description ng-binding">
+                                                Aarna Bijlwan of class 2-E, won the first position in SPIN A YARN, an inter-school competition Supernova-2020, held by Vishwa Bharati Public School, Greater Noida on 17th October 2020. 
+                                                <a class="read-more" target="_blank" ng-href="../EventDetails/EventDetails?eventid=2799" href="https://aisnnew.amizone.net/EventDetails/EventDetails?eventid=2799">Read More...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    
+
+                                    
+
+
+
+
+                                    <!-- End .timeline -->
+
+                                </div><!-- end ngRepeat: Templist in MyAchievements1 --><div class="panel-body ng-scope" ng-repeat="Templist in MyAchievements1">
+                                    <div class="timeline-box">
+                                        <!-- ngIf: Templist.sUrl !='' --><div class="timeline-img ng-scope" ng-if="Templist.sUrl !=&#39;&#39;">
+                                            <img ng-src="https://aisnnew.amizone.net/Webforms/event_photo/65902.jpg" src="./Welcome to Parent Section_files/65902.jpg">
+                                        </div><!-- end ngIf: Templist.sUrl !='' -->
+                                        <!-- ngIf: Templist.sUrl =='' -->
+                                        <div class="timeline-txt bg-orange">
+                                           
+                                           
+                                <div class="sub-title">
+                                <h3 class="title ng-binding">National Open Art Competition</h3>
+                                <strong class="pull-right ng-binding">Oct 30, 2020</strong>
+                              </div>
+
+
+
+
+
+                                            <p class="description ng-binding">
+                                                Samyra Manocha of III G participated in the P N Panicker Open Art competition which was  organized online by P N Panicker Foundation, Kerala. It was held on 10th July, 2020 and  she won the second position from the state of
+                                                <a class="read-more" target="_blank" ng-href="../EventDetails/EventDetails?eventid=2800" href="https://aisnnew.amizone.net/EventDetails/EventDetails?eventid=2800">Read More...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    
+
+                                    
+
+
+
+
+                                    <!-- End .timeline -->
+
+                                </div><!-- end ngRepeat: Templist in MyAchievements1 --><div class="panel-body ng-scope" ng-repeat="Templist in MyAchievements1">
+                                    <div class="timeline-box">
+                                        <!-- ngIf: Templist.sUrl !='' --><div class="timeline-img ng-scope" ng-if="Templist.sUrl !=&#39;&#39;">
+                                            <img ng-src="https://aisnnew.amizone.net/Webforms/event_photo/1f4d8.jpg" src="./Welcome to Parent Section_files/1f4d8.jpg">
+                                        </div><!-- end ngIf: Templist.sUrl !='' -->
+                                        <!-- ngIf: Templist.sUrl =='' -->
+                                        <div class="timeline-txt bg-orange">
+                                           
+                                           
+                                <div class="sub-title">
+                                <h3 class="title ng-binding">Inter School competition </h3>
+                                <strong class="pull-right ng-binding">Oct 27, 2020</strong>
+                              </div>
+
+
+
+
+
+                                            <p class="description ng-binding">
+                                                Samyra Manocha of 3 G participated in “Technottire” , a category in the Battle of the Titans, 2020, which was a technology related competition through the virtual platform, on  15th July, 2020. The event was organized by  M
+                                                <a class="read-more" target="_blank" ng-href="../EventDetails/EventDetails?eventid=2802" href="https://aisnnew.amizone.net/EventDetails/EventDetails?eventid=2802">Read More...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    
+
+                                    
+
+
+
+
+                                    <!-- End .timeline -->
+
+                                </div><!-- end ngRepeat: Templist in MyAchievements1 --><div class="panel-body ng-scope" ng-repeat="Templist in MyAchievements1">
+                                    <div class="timeline-box">
+                                        <!-- ngIf: Templist.sUrl !='' --><div class="timeline-img ng-scope" ng-if="Templist.sUrl !=&#39;&#39;">
+                                            <img ng-src="https://aisnnew.amizone.net/Webforms/event_photo/06a3c.jpg" src="./Welcome to Parent Section_files/06a3c.jpg">
+                                        </div><!-- end ngIf: Templist.sUrl !='' -->
+                                        <!-- ngIf: Templist.sUrl =='' -->
+                                        <div class="timeline-txt bg-orange">
+                                           
+                                           
+                                <div class="sub-title">
+                                <h3 class="title ng-binding">THE THESPIAN TALENT</h3>
+                                <strong class="pull-right ng-binding">Oct 26, 2020</strong>
+                              </div>
+
+
+
+
+
+                                            <p class="description ng-binding">
+                                                Anushka Manoj, a budding talent of 7 A, Amity International School, Noida was the recipient of the 1st Prize at the event- ‘The Thriving Thespians’ – Dramatise a monologue, organized by Srijan School-Synergy 2020 on October
+                                                <a class="read-more" target="_blank" ng-href="../EventDetails/EventDetails?eventid=2844" href="https://aisnnew.amizone.net/EventDetails/EventDetails?eventid=2844">Read More...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    
+
+                                    
+
+
+
+
+                                    <!-- End .timeline -->
+
+                                </div><!-- end ngRepeat: Templist in MyAchievements1 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+
+                    <div class="panel term-main info-box panel-white clearfix">
+                        <div class="main-title home-upper">
+                            <h2 class="pull-left">Important Dates</h2>
+
+                        </div>
+                        <div class="panel-body term text-center">
+                            <div class="info-box-stats text-center">
+                                
+                                <input type="checkbox" class="read-more-state" id="post-2">
+                                <!-- ngRepeat: Templist in TermExamdetail --><ul class="read-more-wrap ng-scope" ng-repeat="Templist in TermExamdetail" id="list">
+
+                                    <!-- ngIf: Templist.SN=='1' --><li ng-if="Templist.SN==&#39;1&#39;" class="ng-scope">
+
+                                        <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                            <span class="text-left pull-left ng-binding">ONLINE CLASSES for Classes NUR- XII - Event  <span class="subject-name2"></span></span>
+
+                                            <small class="date pull-right ng-binding">Aug 13, 2021</small>
+                                        </a>
+                                    </li><!-- end ngIf: Templist.SN=='1' -->
+                                    <!-- ngIf: Templist.SN=='2' -->
+                                    <!-- ngIf: Templist.SN=='3' -->
+                                    <!-- ngIf: Templist.SN=='4' -->
+                                </ul><!-- end ngRepeat: Templist in TermExamdetail --><ul class="read-more-wrap ng-scope" ng-repeat="Templist in TermExamdetail" id="list">
+
+                                    <!-- ngIf: Templist.SN=='1' -->
+                                    <!-- ngIf: Templist.SN=='2' --><li ng-if="Templist.SN==&#39;2&#39;" class="ng-scope">
+
+                                        <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                            <span class="text-left pull-left ng-binding">ONLINE CLASSES for Classes NUR- XII - Event  <span class="subject-name2"></span></span>
+
+                                            <small class="date pull-right ng-binding">Aug 16, 2021</small>
+                                        </a>
+                                    </li><!-- end ngIf: Templist.SN=='2' -->
+                                    <!-- ngIf: Templist.SN=='3' -->
+                                    <!-- ngIf: Templist.SN=='4' -->
+                                </ul><!-- end ngRepeat: Templist in TermExamdetail --><ul class="read-more-wrap ng-scope" ng-repeat="Templist in TermExamdetail" id="list">
+
+                                    <!-- ngIf: Templist.SN=='1' -->
+                                    <!-- ngIf: Templist.SN=='2' -->
+                                    <!-- ngIf: Templist.SN=='3' --><li ng-if="Templist.SN==&#39;3&#39;" class="read-more-target ng-scope" id="removeclass">
+
+                                        <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                            <span class="text-left pull-left ng-binding">ONLINE CLASSES for Classes NUR- XII - Event  <span class="subject-name2"></span></span>
+
+                                            <small class="date pull-right ng-binding">Aug 16, 2021</small>
+                                        </a>
+                                    </li><!-- end ngIf: Templist.SN=='3' -->
+                                    <!-- ngIf: Templist.SN=='4' -->
+                                </ul><!-- end ngRepeat: Templist in TermExamdetail --><ul class="read-more-wrap ng-scope" ng-repeat="Templist in TermExamdetail" id="list">
+
+                                    <!-- ngIf: Templist.SN=='1' -->
+                                    <!-- ngIf: Templist.SN=='2' -->
+                                    <!-- ngIf: Templist.SN=='3' -->
+                                    <!-- ngIf: Templist.SN=='4' --><li ng-if="Templist.SN==&#39;4&#39;" class="read-more-target ng-scope" id="removeclass">
+
+                                        <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                            <span class="text-left pull-left ng-binding">ONLINE CLASSES for Classes NUR- XII - Event  <span class="subject-name2"></span></span>
+
+                                            <small class="date pull-right ng-binding">Aug 16, 2021</small>
+                                        </a>
+                                    </li><!-- end ngIf: Templist.SN=='4' -->
+                                </ul><!-- end ngRepeat: Templist in TermExamdetail -->
+
+                                <label for="post-2" class="read-more-trigger" id="removeclass" style="display: block;"></label>
+                            </div>
+                        </div>
+                        <div class="panel-body term text-center ng-hide" ng-show="!TermExamdetail.length" style="display:none;">
+                            <div class="info-box-stats text-center">
+                                <span class="test-date">Setup Not Define</span>
+                                <span class="test-sub"><br></span>
+                            </div>
+                            <p><br></p>
+                        </div>
+                    </div>
+
+                    <!-- ngRepeat: Templist in Studentdetail -->
+                    <div class="panel info-box panel-white toppers" ng-show="!Studentdetail.length" style="display:none;">
+                        <div class="topper-wraper">
+                            <figure><br></figure>
+                            <div class="t-txt">
+                                <span class="t-name">Result Not Published - </span>
+                                <strong class="t-perc"><br></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-notice panel-holiday">
+                        <div class="main-title">
+                            <h2 class="pull-left">Notices</h2>
+                            <div class="filter-block pull-right mt-12 mt-sm-15">
+
+                                <a href="https://aisnnew.amizone.net/Notice/Notice" class="btn btn-primary pull-right">
+                                    <i class="fa fa-eye fa-lg"></i> View all
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="todo-list">
+                                <!-- ngRepeat: Templist in NoticeDetail --><li class="list ng-scope" ng-repeat="Templist in NoticeDetail">
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../NoticeDetails/NoticeDetails?iNoticeId=1215" href="https://aisnnew.amizone.net/NoticeDetails/NoticeDetails?iNoticeId=1215">
+                                            <strong class="name-icon bg-primary">
+                                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                            </strong>
+                                            <span class="inner-txt ng-binding">GLOBAL TIMES</span><span class="notice-date ng-binding">Jul 30, 2021</span>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in NoticeDetail --><li class="list ng-scope" ng-repeat="Templist in NoticeDetail">
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../NoticeDetails/NoticeDetails?iNoticeId=1214" href="https://aisnnew.amizone.net/NoticeDetails/NoticeDetails?iNoticeId=1214">
+                                            <strong class="name-icon bg-primary">
+                                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                            </strong>
+                                            <span class="inner-txt ng-binding">GLOBAL TIMES</span><span class="notice-date ng-binding">Jul 22, 2021</span>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in NoticeDetail --><li class="list ng-scope" ng-repeat="Templist in NoticeDetail">
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../NoticeDetails/NoticeDetails?iNoticeId=1213" href="https://aisnnew.amizone.net/NoticeDetails/NoticeDetails?iNoticeId=1213">
+                                            <strong class="name-icon bg-primary">
+                                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                            </strong>
+                                            <span class="inner-txt ng-binding">GLOBAL TIMES</span><span class="notice-date ng-binding">Jul 16, 2021</span>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in NoticeDetail -->
+                                
+
+
+                                <li ng-show="!NoticeDetail.length" style="display:none;" class="ng-hide">
+                                    <span>  No Notices Assigned.     </span>
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-knowledge panel-holiday">
+                        <div class="main-title">
+                            <h2 class="pull-left">Knowledge Resource</h2>
+                            <div class="filter-block pull-right mt-15 mt-sm-15">
+
+                                <a href="https://aisnnew.amizone.net/KnowledgeResourcedata/KnowledgeResourcedata" class="btn btn-primary pull-right mr-0">
+                                    <i class="fa fa-eye fa-lg"></i> View all
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="todo-list">
+                                <!-- ngRepeat: Templist in KnowlwdgeResourceDetail --><li class="list ng-scope" ng-repeat="Templist in KnowlwdgeResourceDetail">
+                                    
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20203" href="https://aisnnew.amizone.net/KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20203">
+                                            <strong class="name-icon bg-primary pull-left"><i class="fa fa-newspaper-o" aria-hidden="true"></i></strong>
+                                            <div class="subject-right pull-left">
+                                                <span class="subject-name ng-binding">Mathematics</span>
+                                                <span class="inner-txt ng-binding">Simple Equations 5</span>
+                                                <span class="date ng-binding">27 Jul 21</span>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in KnowlwdgeResourceDetail --><li class="list ng-scope" ng-repeat="Templist in KnowlwdgeResourceDetail">
+                                    
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20197" href="https://aisnnew.amizone.net/KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20197">
+                                            <strong class="name-icon bg-primary pull-left"><i class="fa fa-newspaper-o" aria-hidden="true"></i></strong>
+                                            <div class="subject-right pull-left">
+                                                <span class="subject-name ng-binding">Sanskrit</span>
+                                                <span class="inner-txt ng-binding">Sangya and Lakaar </span>
+                                                <span class="date ng-binding">26 Jul 21</span>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in KnowlwdgeResourceDetail --><li class="list ng-scope" ng-repeat="Templist in KnowlwdgeResourceDetail">
+                                    
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20182" href="https://aisnnew.amizone.net/KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20182">
+                                            <strong class="name-icon bg-primary pull-left"><i class="fa fa-newspaper-o" aria-hidden="true"></i></strong>
+                                            <div class="subject-right pull-left">
+                                                <span class="subject-name ng-binding">Hindi</span>
+                                                <span class="inner-txt ng-binding">Sarvanaam</span>
+                                                <span class="date ng-binding">23 Jul 21</span>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in KnowlwdgeResourceDetail --><li class="list ng-scope" ng-repeat="Templist in KnowlwdgeResourceDetail">
+                                    
+                                    <!-- ngIf: Templist.BView=='True' -->
+                                    <!-- ngIf: Templist.BView=='' --><div ng-if="Templist.BView==&#39;&#39;" class="ng-scope">
+                                        <a class="box-hover" ng-href="../KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20178" href="https://aisnnew.amizone.net/KnowledgeResourceDetails/KnowledgeResourceDetails?iKDetailsID=20178">
+                                            <strong class="name-icon bg-primary pull-left"><i class="fa fa-newspaper-o" aria-hidden="true"></i></strong>
+                                            <div class="subject-right pull-left">
+                                                <span class="subject-name ng-binding">Mathematics</span>
+                                                <span class="inner-txt ng-binding">Simple Equations 4</span>
+                                                <span class="date ng-binding">22 Jul 21</span>
+                                            </div>
+                                        </a>
+                                    </div><!-- end ngIf: Templist.BView=='' -->
+
+                                </li><!-- end ngRepeat: Templist in KnowlwdgeResourceDetail -->
+                                
+
+
+                                <li ng-show="!KnowlwdgeResourceDetail.length" style="display:none;" class="ng-hide">
+                                    <span>  No Knowledge Resource Assigned.     </span>
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-holiday panel-assignment" id="divhomework">
+                        <div class="main-title">
+                            <h2 class="pull-left">Homework</h2>
+                            <div class="filter-block pull-right mt-12 mt-sm-15">
+
+                                <a href="https://aisnnew.amizone.net/Homework/Homework" class="btn btn-primary pull-right">
+                                    <i class="fa fa-eye fa-lg"></i> View all
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="todo-list">
+                                <!-- ngRepeat: Templist in HomeworkDetail --><li class="list ng-scope" ng-repeat="Templist in HomeworkDetail">
+                                    <a class="box-hover" ng-href="../Homework/Homework?sub=1" href="https://aisnnew.amizone.net/Homework/Homework?sub=1">
+                                        <strong class=" name-icon bg-primary">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <span class="ng-binding">English<span> [ </span>4<span> ]</span>
+                                    </span></a>
+                                    
+
+
+
+                                </li><!-- end ngRepeat: Templist in HomeworkDetail --><li class="list ng-scope" ng-repeat="Templist in HomeworkDetail">
+                                    <a class="box-hover" ng-href="../Homework/Homework?sub=5" href="https://aisnnew.amizone.net/Homework/Homework?sub=5">
+                                        <strong class=" name-icon bg-primary">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <span class="ng-binding">French<span> [ </span>1<span> ]</span>
+                                    </span></a>
+                                    
+
+
+
+                                </li><!-- end ngRepeat: Templist in HomeworkDetail --><li class="list ng-scope" ng-repeat="Templist in HomeworkDetail">
+                                    <a class="box-hover" ng-href="../Homework/Homework?sub=2" href="https://aisnnew.amizone.net/Homework/Homework?sub=2">
+                                        <strong class=" name-icon bg-primary">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <span class="ng-binding">Hindi<span> [ </span>8<span> ]</span>
+                                    </span></a>
+                                    
+
+
+
+                                </li><!-- end ngRepeat: Templist in HomeworkDetail --><li class="list ng-scope" ng-repeat="Templist in HomeworkDetail">
+                                    <a class="box-hover" ng-href="../Homework/Homework?sub=7" href="https://aisnnew.amizone.net/Homework/Homework?sub=7">
+                                        <strong class=" name-icon bg-primary">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <span class="ng-binding">Science<span> [ </span>8<span> ]</span>
+                                    </span></a>
+                                    
+
+
+
+                                </li><!-- end ngRepeat: Templist in HomeworkDetail --><li class="list ng-scope" ng-repeat="Templist in HomeworkDetail">
+                                    <a class="box-hover" ng-href="../Homework/Homework?sub=38" href="https://aisnnew.amizone.net/Homework/Homework?sub=38">
+                                        <strong class=" name-icon bg-primary">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <span class="ng-binding">Social Sciences<span> [ </span>3<span> ]</span>
+                                    </span></a>
+                                    
+
+
+
+                                </li><!-- end ngRepeat: Templist in HomeworkDetail -->
+
+                                <li ng-show="!HomeworkDetail.length" style="display:none;" class="ng-hide">
+                                    <span>  No Homework Assigned.     </span>
+
+                                </li>
+
+                            </ul>
+<div class="main-title text-center" ng-show="Hhide">
+
+                                <a href="https://aisnnew.amizone.net/HolidayHomework/HolidayHomework" class="btn bg-btn btn-primary">
+                                    Holiday Homework
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-holiday">
+                        <div class="main-title">
+                            <h2 class="pull-left">Holidays</h2>
+                            <div class="filter-block pull-right mt-12 mt-sm-15">
+
+                                <a href="https://aisnnew.amizone.net/Holiday/Holiday" class="btn btn-primary pull-right">
+                                    <i class="fa fa-eye fa-lg"></i> View all
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="todo-list">
+                                
+                                <!-- ngRepeat: Templist in HolidayDetail --><li class="list ng-scope" ng-repeat="Templist in HolidayDetail">
+                                    <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                        <strong class=" name-icon bg-primary pull-left">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <div class="subject-right pull-left">
+                                            
+                                            <span class="date">
+                                                <!-- ngIf: Templist.StartDate!=Templist.EndDate -->
+                                                <!-- ngIf: Templist.StartDate==Templist.EndDate --><span ng-if="Templist.StartDate==Templist.EndDate" class="ng-binding ng-scope">Aug 15, 2021</span><!-- end ngIf: Templist.StartDate==Templist.EndDate -->
+
+                                            </span>
+
+                                            <span class="subject-name ng-binding"> INDEPENDENCE DAY</span>
+
+
+                                        </div>
+                                    </a>
+                                </li><!-- end ngRepeat: Templist in HolidayDetail --><li class="list ng-scope" ng-repeat="Templist in HolidayDetail">
+                                    <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                        <strong class=" name-icon bg-primary pull-left">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <div class="subject-right pull-left">
+                                            
+                                            <span class="date">
+                                                <!-- ngIf: Templist.StartDate!=Templist.EndDate -->
+                                                <!-- ngIf: Templist.StartDate==Templist.EndDate --><span ng-if="Templist.StartDate==Templist.EndDate" class="ng-binding ng-scope">Aug 22, 2021</span><!-- end ngIf: Templist.StartDate==Templist.EndDate -->
+
+                                            </span>
+
+                                            <span class="subject-name ng-binding"> RAKSHA BANDHAN</span>
+
+
+                                        </div>
+                                    </a>
+                                </li><!-- end ngRepeat: Templist in HolidayDetail --><li class="list ng-scope" ng-repeat="Templist in HolidayDetail">
+                                    <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                        <strong class=" name-icon bg-primary pull-left">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <div class="subject-right pull-left">
+                                            
+                                            <span class="date">
+                                                <!-- ngIf: Templist.StartDate!=Templist.EndDate -->
+                                                <!-- ngIf: Templist.StartDate==Templist.EndDate --><span ng-if="Templist.StartDate==Templist.EndDate" class="ng-binding ng-scope">Aug 30, 2021</span><!-- end ngIf: Templist.StartDate==Templist.EndDate -->
+
+                                            </span>
+
+                                            <span class="subject-name ng-binding"> JANAMASHTAMI</span>
+
+
+                                        </div>
+                                    </a>
+                                </li><!-- end ngRepeat: Templist in HolidayDetail --><li class="list ng-scope" ng-repeat="Templist in HolidayDetail">
+                                    <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                        <strong class=" name-icon bg-primary pull-left">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <div class="subject-right pull-left">
+                                            
+                                            <span class="date">
+                                                <!-- ngIf: Templist.StartDate!=Templist.EndDate -->
+                                                <!-- ngIf: Templist.StartDate==Templist.EndDate --><span ng-if="Templist.StartDate==Templist.EndDate" class="ng-binding ng-scope">Oct 02, 2021</span><!-- end ngIf: Templist.StartDate==Templist.EndDate -->
+
+                                            </span>
+
+                                            <span class="subject-name ng-binding"> GANDHI JAYANTI</span>
+
+
+                                        </div>
+                                    </a>
+                                </li><!-- end ngRepeat: Templist in HolidayDetail --><li class="list ng-scope" ng-repeat="Templist in HolidayDetail">
+                                    <a class="box-hover" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#">
+                                        <strong class=" name-icon bg-primary pull-left">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </strong>
+                                        <div class="subject-right pull-left">
+                                            
+                                            <span class="date">
+                                                <!-- ngIf: Templist.StartDate!=Templist.EndDate -->
+                                                <!-- ngIf: Templist.StartDate==Templist.EndDate --><span ng-if="Templist.StartDate==Templist.EndDate" class="ng-binding ng-scope">Oct 15, 2021</span><!-- end ngIf: Templist.StartDate==Templist.EndDate -->
+
+                                            </span>
+
+                                            <span class="subject-name ng-binding"> DUSSHERA BREAK</span>
+
+
+                                        </div>
+                                    </a>
+                                </li><!-- end ngRepeat: Templist in HolidayDetail -->
+                                <li ng-show="!HolidayDetail.length" style="display:none;" class="ng-hide">
+                                    <span>  No Holidays Define.     </span>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="marks-info">
+                        <div class="main-title">
+                            <h2>Marks Information</h2><h3></h3>
+                        </div>
+                        <div class="filter">
+                            <div class="dropdown-group">
+                                <label>Select Term: </label>
+                                <select class="form-control input-sm ng-pristine ng-untouched ng-valid" ng-model="ExamElementId" ng-options="objbindExam.ExamElementId as objbindExam.ExamElementShortName for objbindExam in bindExam" ng-change="Termchange(ExamElementId)" style="padding: 1px 10px;"><option value="" class="">-All--</option><option value="0" label="Term1">Term1</option><option value="1" label="Term2">Term2</option></select>
+                            </div>
+                        </div>
+                        <div class="panel-group" id="accordion">
+                            <!-- ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne1" class="ng-binding">English</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne2" class="ng-binding">Hindi</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne5" class="ng-binding">French</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne6" class="ng-binding">Mathematics</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne7" class="ng-binding">Science</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne7" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne11" class="ng-binding">Other Subjects</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne11" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><div class="panel panel-default ng-scope" ng-repeat="acaobj in ExamElemntsDetail">
+                                <div class="panel-heading bg-1">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="https://aisnnew.amizone.net/HomeTemplate/HomeTemplate#collapseOne38" class="ng-binding">Social Sciences</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne38" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="main-box clearfix">
+                                            <header class="main-box-header clearfix">
+
+                                                <!-- ngRepeat: objsubsubject in acaobj.subsubject -->
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end ngRepeat: acaobj in ExamElemntsDetail --><!--academics-->
+                        </div>
+                        <div class="panel-group ng-hide" ng-show="!ExamElemntsDetail.length" style="display:none;">
+                            <div class="panel-heading bg-1">
+                                <h4 class="panel-title">
+                                    <span> Setup Not Define.     </span>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                   <form class="ng-pristine ng-valid">
+                    <div id="style_switcher3" class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true" data-animation-reset-offscreen="true" hidden="" style="display: none;">
+                        <div id="style_switcher_toggle3">
+                            Doctor's Comment
+                            &nbsp;<i class="fa fa-commenting-o" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="guidelines">
+                            <div id="divDoctorComment" class="guidelines-content">
+                                
+                                <table id="tblDoctorComment" class="" border="1" style="border-color: lightgray; ">
+                                    <thead>
+                                        <tr>
+                                            <th>TYPE OF COMPLAIN/INJURY</th>
+                                            <th>Injury Date</th>
+                                            <th>Prescription</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table><br>
+                                <b>Parent's comment :</b>
+                                <textarea name="comment" placeholder="Comment" ng-model="parentComment" style="width:100%" class="ng-pristine ng-untouched ng-valid"></textarea>
+                                <div class="text-center">
+                                    
+                                    <input class="btn mt-12" type="button" value="Submit" ng-click="parentCommentSave()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal content-->
+
+<!--Model for Feedback form-->
+<div id="myFeedback" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <iframe src="./Welcome to Parent Section_files/Parent-Feedback_Form.html" width="100%" height="480px"></iframe>
+                               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="ImagePopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="width:800px">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+
+                <img src="./Welcome to Parent Section_files/popup-raviji.jpg">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div id="div_notification" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> </h5>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <p> Dear Parent,</p>
+
+                <p>Sub:- Rescheduling of Summer Vacation for Academic session 2021-22.</p>
+                <p>
+                    Sir/Madam
+                </p>
+                <p>
+                    In view of ongoing COVID pandemic conditions during which a large number of teacher and students are suffering from COVID and that various Governments are imposing lockdown in their respective state, the management has decided to rescheduled summer vacations from 20.04.2021 to 09.06.2021.
+                </p>
+                <p>
+                    No online or semi online classes shall be held during the above mentioned period.
+                </p>
+                <br>
+                <p>Regards</p>
+                <p>Principal</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    $(function () {
+        $('ul.fader li').hide();
+        $('ul.fader li').css('position', 'absolute');
+        $('ul.fader li').css('top', '0px');
+        $('ul.fader li').css('left', '0px');
+
+        var max = $('ul.fader li').length;
+
+        function showSlider() {
+
+            if (localStorage.slider) {
+                $('.fader').find('li:nth(' + localStorage.slider + ')').fadeIn();
+                localStorage.slider = parseInt(localStorage.slider, 10) + 1;
+                if (localStorage.slider >= max) localStorage.slider = 0;
+            } else {
+                $('.fader').find('li:nth(0)').fadeIn();
+                localStorage.slider = 1;
+            }
+        }
+
+        showSlider();
+
+    });
+    $(window).load(function () {
+        $('#birthday-Modal').modal('show');
+    });
+    
+    //$(window).load(function () {
+    //    $('#myFeedback').modal('show');
+    //});
+
+    $(window).load(function () {
+        //$('#mypolutionpopup').modal('show');
+    });
+
+$(window).load(function () {
+        $('#myemailverify').modal('show');
+    });
+
+  $(window).load(function () {
+       // $('#div_notification').modal('show');
+          $('#div_notification').modal('hide');
+    });
+
+//$(window).load(function () {
+ //       $('#ImagePopup').modal('show');
+  //  });
+</script>
+
+
+    </div>
+
+    
+
+
+    <!-- common functions -->
+
+
+
+
+
+    <script>
+        //$(".progress-bar").loading();
+        /* ---------------------------------------------- /*
+  *active menu
+ /* ---------------------------------------------- */
+        $(function () {
+            var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+
+            $(".nav-active li a").each(function () {
+                if (pgurl == '') {
+                    pgurl = "../HomeTemplate/HomeTemplate";
+                }
+                if ($(this).attr("href") == pgurl)
+                    $(this).parents('li').addClass("active");
+            })
+        });
+
+    </script>
+
+
+
+
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

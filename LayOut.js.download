@@ -1,0 +1,78 @@
+﻿
+var app = angular.module('App', []);
+app.controller('Layout', function ($scope, Loginservice) {
+    debugger;
+    $scope.Login = {
+        LoginName: ''
+    };      
+
+      function Sessiondata() {
+          Loginservice.LoginCheck().then(function (d) {
+              debugger;
+            $scope.Login.LoginName = d.Username
+            return $scope.Login
+        });
+      }
+
+      $scope.Logout = function () {
+          Loginservice.Logout().then(function (d) {
+              if (d.LoginName == null) {
+                  window.location.href = "/Login/Login";
+              }
+          });
+      }
+
+})
+.factory('Loginservice', function ($http, $q) {
+    var Login = {};
+
+        Login.Sessiondata = function () {
+            var defer = $q.defer();
+            $http({
+                url: '/Login/GetSessionid',
+                method: 'POST',            
+                headers: { 'content-type': 'application/json' }
+            }).then(function (response) {
+                console.log(response, 'res');
+                data = response.data;
+            },function (error){
+                console.log(error, 'error');
+            });
+            return defer.promise;
+        }
+
+        Login.Logout = function () {
+            var defer = $q.defer();
+            $http({
+                url: '/Login/Logout',
+                method: 'POST',
+                headers: { 'content-type': 'application/json' }
+            }).success(function (d) {
+                // alert('hi');
+                // Success callback
+                defer.resolve(d);
+            }).error(function (e) {
+                //Failed Callback
+                alert('Error!');
+                defer.reject(e);
+            });
+            return defer.promise;
+        }
+    return {
+      
+        Sessiondata: Login.Sessiondata,
+        Logout: Login.Logout
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
